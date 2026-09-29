@@ -85,7 +85,7 @@ function renderCart() {
 <p class="hint">CAD, before shipping from Toronto.</p>
 <button class="btn btn-primary btn-wide" type="button" data-checkout-go>Check out</button>
 <div class="handoff" data-handoff hidden>
-  <h2>Checkout isn't live in this concept store.</h2>
+  <h2>Checkout isn't live in this concept store</h2>
   <p>On R3D's own store this is one step: Shop Pay, Apple Pay or card. For now each piece is sold on Etsy. Your picks, with their options, are below.</p>
   <ol class="handoff-list">${cart.map((l) => `<li><a href="${esc(l.etsy)}" rel="noopener">${esc(l.name)} × ${l.qty}</a>${l.opts.length || l.text.some(Boolean) ? `<span>${esc([...l.opts.map(([k, v]) => `${k}: ${v}`), ...l.text.filter(Boolean).map((t) => `“${t}”`)].join(' · '))}</span>` : ''}</li>`).join('')}</ol>
 </div>`
@@ -361,6 +361,9 @@ if (comp) {
     panel.setMessages(msgs.length ? msgs : [{ text: 'TYPE SOMETHING', effect: 'left' }])
     body.style.setProperty('--led', runner.dataset.glow)
     panel.setGlow(runner.dataset.glow)
+    const photo = $('[data-c-img]', comp)
+    if (photo.getAttribute('src') !== runner.dataset.img) photo.src = runner.dataset.img
+    $('[data-c-label]', comp).textContent = runner.dataset.label
     const q = new URLSearchParams({ runner: runner.value, fx })
     t.forEach((v, i) => v && q.set(`t${i + 1}`, v))
     go.href = `${base}?${q}`

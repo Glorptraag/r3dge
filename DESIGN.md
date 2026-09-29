@@ -16,20 +16,23 @@ colors:
 typography:
   display:
     fontFamily: "Doto, Courier New, monospace"
-    fontSize: "clamp(2.5rem, 4.8vw, 4.5rem)"
-    fontWeight: 900
-    lineHeight: 1.02
+    fontSize: "clamp(2.4rem, 4vw, 3.4rem)"
+    fontWeight: 800
+    fontVariation: "'ROND' 100"
+    lineHeight: 1.04
     letterSpacing: "0"
   display-page:
     fontFamily: "Doto, Courier New, monospace"
     fontSize: "clamp(3rem, 7vw, 5.5rem)"
-    fontWeight: 900
-    lineHeight: 1.02
+    fontWeight: 800
+    fontVariation: "'ROND' 100"
+    lineHeight: 1.04
   headline:
     fontFamily: "Doto, Courier New, monospace"
     fontSize: "clamp(2rem, 3.4vw, 3.1rem)"
-    fontWeight: 900
-    lineHeight: 1.02
+    fontWeight: 800
+    fontVariation: "'ROND' 100"
+    lineHeight: 1.04
   numeral:
     fontFamily: "Doto, Courier New, monospace"
     fontSize: "1.3rem"
@@ -203,16 +206,16 @@ Runner Tag variants carry their own glow colour from `data/catalog.json` (green,
 
 ## Typography
 
-**Display Font:** Doto (Courier New, monospace fallback), weights 700/900, loaded from Google Fonts.
+**Display Font:** Doto (Courier New, monospace fallback), loaded from Google Fonts with its roundness axis (`ROND 0..100`, `wght 600..900`). `font-variation-settings: 'ROND' 100` is set on `body` so every Doto glyph is built from round dots, like the LED panels.
 **Control / Label Font:** Barlow Semi Condensed 600/700, self-hosted woff2.
 **Body Font:** Barlow 400/500, self-hosted woff2.
 
 **Character:** A dot-matrix display face that looks like the product's own screen, paired with a condensed industrial grotesque for the instrument labels and a plain, warm grotesque for reading.
 
 ### Hierarchy
-- **Display** (Doto 900, clamp(2.5rem, 4.8vw, 4.5rem), 1.02): the home h1 and section h2s; set in sentence case with a trailing full stop ("Pick your Runner.").
-- **Display Page** (Doto 900, clamp(3rem, 7vw, 5.5rem)): the single h1 of Shop and Lab index pages.
-- **Headline** (Doto 900, clamp(2rem, 3.4vw, 3.1rem)): h2 section heads.
+- **Display** (Doto 800, ROND 100, clamp(2.4rem, 4vw, 3.4rem), 1.04, soft ink halo `0 0 18px rgba(244,238,233,.22)`): the home h1 and section h2s; sentence case with no trailing full stop, because Doto draws a period as a cross (the build strips any that slip in).
+- **Display Page** (Doto 800, ROND 100, clamp(3rem, 7vw, 5.5rem)): the single h1 of Shop and Lab index pages.
+- **Headline** (Doto 800, ROND 100, clamp(2rem, 3.4vw, 3.1rem)): h2 section heads.
 - **Numeral** (Doto 900, 0.95–1.5rem, red): every price, count, corner tag, quantity, "+"-style marker. Hero price and tallies step up to clamp(2rem, 3vw, 2.6rem) and clamp(2.2rem, 4vw, 3.4rem), tabular.
 - **Tag Input** (Doto 700, 1.35rem): text fields whose content will appear on the LED, so the user types in the screen's voice.
 - **Title** (Barlow Semi Condensed 700, 1.15–1.25rem, uppercase, 0.04–0.06em): h3, card and tile names, FAQ questions, cart lines.
@@ -254,7 +257,7 @@ The only shadows are light emitted by LEDs, and they take the colour of `--led`.
 
 ## Shapes
 
-Near-square everywhere the user operates: controls, inputs, chips and qty steppers at 2px; media wells, cards, tiles, panels and the drawer at 0. Rounded forms are reserved for hardware replicas: the Runner Tag body (22px) with its circular key ring, the product screen housing (10px), and the LED window inside (4–6px). Circles appear only as LED dots and indicator dots. Icons are 2px-stroke line icons with square caps and mitred joins.
+Near-square everywhere the user operates: controls, inputs, chips and qty steppers at 2px; media wells, cards, tiles, panels and the drawer at 0. Rounded forms are reserved for instrument bezels: the screen housing (10px) around every live LED preview and the drop sign, and the LED window inside (4px). Physical products are shown by their real photos, never imitated in CSS. Circles appear only as LED dots and indicator dots. Icons are 2px-stroke line icons with square caps and mitred joins.
 
 **The Hardware Radius Rule.** Radius above 2px means "this is a physical object"; never round a UI control to look like one.
 
@@ -301,7 +304,7 @@ The dot carries into chrome: active/hover nav gets a dotted underline (1.4px dot
 Sticky 64px void bar with a 1px bottom rule: badge-font "R3D" SVG mark, muted tracked wordmark, nav in nav type with ink text; hover/current red with dotted underline. Cart button is line-2 bordered with an LED counter (pit well, Doto numeral, ghost when empty, red when filled).
 
 ### Device Replica
-The Runner Tag composer and product screen draw the physical product: dark gradient body, 22px/10px radius, inset LED window, glow cast in the selected runner colour. Typing into tag fields updates the panel live.
+The composer and product screens are instrument bezels (pit-black, 10px radius) holding the live LED panel, with glow cast in the selected runner or LED colour. On the home composer the selected runner's real photo, name, edition and price sit under the screen and swap instantly with the Runner chip; on mobile the stage pins under the header while you type. Typing into text fields updates the panel live.
 
 ### Cart Drawer and Toast
 Right-hand drawer, min(440px, 100%), panel background, line-2 left edge, slides in over a 70% pit scrim. Toast is an ink slab with void text in control type, bottom-centre, rising 16px into place and holding 2.6s.
@@ -327,3 +330,7 @@ One easing, `cubic-bezier(0.22, 1, 0.36, 1)`. Only objects move: drawer 260ms, s
 - **Don't** hide the ghost bed or render lit dots without their unlit neighbours; bare glowing text is not this world.
 - **Don't** uppercase headlines or body copy.
 - **Don't** hard-code runner glow colours into shared styles.
+
+## Swappable media
+
+Every image slot (cards, runner tiles, home doors, product gallery, composer photo) renders through `src/assets/media.js`, so a slot can hold an image, a muted looping video or a `<model-viewer>` 3D model (loaded on demand) without template changes. Media slots keep a fixed aspect ratio and `object-fit: cover`, so a video or model drops into the same frame as the photo it replaces. Home, drop and ticker content lives in `data/site.json`.

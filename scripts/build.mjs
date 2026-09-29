@@ -87,7 +87,7 @@ function layout({ path, title, description, body, active = '', root: fixedRoot }
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://i.etsystatic.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:wght@700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:ROND,wght@0..100,600..900&display=swap">
 <link rel="stylesheet" href="${u('assets/site.css')}">
 <script type="module" src="${u('assets/store.js')}"></script>
 </head>
@@ -156,8 +156,8 @@ function runnerTile(v, u) {
   return `<a class="runner" href="${u(`products/runner-tag/?runner=${v.key}`)}" style="--led:${v.glow}">
   <span class="runner-media">${mediaHtml(vmedia(v)[0], { size: 'il_570xN', w: 570, h: 570 })}</span>
   <canvas class="led runner-led" data-led="${attr({ cols: 44, glow: v.glow, messages: [{ text: v.label.replace(' Contraband', ''), effect: 'freeze', hold: 60 }, { text: v.label, effect: 'left' }] })}" aria-hidden="true"></canvas>
-  <span class="runner-name">${esc(v.label)}</span>
-  <span class="runner-meta">${v.edition} edition · ${money(v.price)}</span>
+  <span class="sr-only">${esc(v.label)}</span>
+  <span class="runner-meta"><span>${v.edition} edition</span><span class="price">${money(v.price)}<span class="price-cur"> CAD</span></span></span>
 </a>`
 }
 
@@ -165,31 +165,28 @@ function composer(u) {
   return `<section class="composer" aria-labelledby="composer-h" data-composer>
   <div class="composer-copy">
     <h2 id="composer-h">Your words, lit.</h2>
-    <p>Every Runner Tag, X-Display and L3D Challenger Box carries two text frames you write yourself. Try yours on the same 11 × 44 screen, rendered in the badge's own font.</p>
+    <p>Every Runner Tag carries two text frames you write yourself. Try yours on its 11 × 44 screen, rendered in the badge's own font. The X-Display (11 × 48) and L3D Challenger Box take custom text too.</p>
     <div class="field"><label for="c-t1">Frame one</label><input id="c-t1" maxlength="24" value="RUNNER" autocomplete="off" spellcheck="false" data-c-text="0"></div>
     <div class="field"><label for="c-t2">Frame two</label><input id="c-t2" maxlength="24" value="ELEVATE THE GAME" autocomplete="off" spellcheck="false" data-c-text="1"></div>
     <fieldset class="chips"><legend>Effect</legend>
       ${['scroll', 'laser', 'pile', 'flash'].map((fx, i) => `<label class="chip"><input type="radio" name="c-fx" value="${fx}"${i === 0 ? ' checked' : ''}><span>${fx}</span></label>`).join('')}
     </fieldset>
     <fieldset class="chips"><legend>Runner</legend>
-      ${runners.map((v, i) => `<label class="chip chip-glow" style="--led:${v.glow}"><input type="radio" name="c-runner" value="${v.key}" data-glow="${v.glow}"${i === 2 ? ' checked' : ''}><span>${esc(v.label.replace(' Contraband', ''))}</span></label>`).join('')}
+      ${runners.map((v, i) => `<label class="chip chip-glow" style="--led:${v.glow}"><input type="radio" name="c-runner" value="${v.key}" data-glow="${v.glow}" data-img="${posterSrc(vmedia(v)[0], 'il_570xN')}" data-label="${esc(v.label.replace(' Contraband', ''))} · ${v.edition} edition · ${money(v.price)}"${i === 2 ? ' checked' : ''}><span>${esc(v.label.replace(' Contraband', ''))}</span></label>`).join('')}
     </fieldset>
     <a class="btn btn-primary" href="${u('products/runner-tag/')}" data-c-go>Put it on a Runner Tag ${ICON.arrow}</a>
   </div>
-  <div class="composer-stage">
-    <div class="tag-body" style="--led:#ff5a1f" data-c-body>
-      <span class="tag-ring" aria-hidden="true"></span>
-      <canvas class="led tag-led" data-led="${attr({ cols: 44, glow: '#ff5a1f', messages: [{ text: 'RUNNER', effect: 'left' }, { text: 'ELEVATE THE GAME', effect: 'left' }] })}" aria-label="Preview of your text on the tag" data-c-panel></canvas>
-    </div>
-    <p class="stage-note">Live preview at the tag's real resolution, 11 × 44 pixels.</p>
+  <div class="composer-stage" style="--led:${runners[2].glow}" data-c-body>
+    <div class="screen"><canvas class="led screen-led" data-led="${attr({ cols: 44, glow: runners[2].glow, messages: [{ text: 'RUNNER', effect: 'left' }, { text: 'ELEVATE THE GAME', effect: 'left' }] })}" aria-label="Preview of your text on the tag" data-c-panel></canvas></div>
+    <figure class="stage-photo"><img src="${posterSrc(vmedia(runners[2])[0], 'il_570xN')}" alt="" width="570" height="570" loading="eager" data-c-img><figcaption><span class="stage-runner" data-c-label>${(() => { const v = runners[2]; return `${esc(v.label.replace(' Contraband', ''))} · ${v.edition} edition · ${money(v.price)}` })()}</span><span class="stage-note">Live preview at the tag's real resolution, 11 × 44 pixels, in this runner's screen colour.</span></figcaption></figure>
   </div>
 </section>`
 }
 
-function waitlist(id = 'drop') {
+function waitlist(id = 'drop', btn = 'btn-primary') {
   return `<form class="waitlist" data-waitlist novalidate>
   <label for="${id}-email">Email for DROP-02 alerts</label>
-  <div class="waitlist-row"><input id="${id}-email" type="email" name="email" autocomplete="email" placeholder="you@example.com" required><button class="btn btn-dark" type="submit">Get the signal</button></div>
+  <div class="waitlist-row"><input id="${id}-email" type="email" name="email" autocomplete="email" placeholder="you@example.com" required><button class="btn ${btn}" type="submit">Get the signal</button></div>
   <p class="waitlist-msg" data-waitlist-msg>Demo form: your address stays in this browser and nothing is sent.</p>
 </form>`
 }
@@ -237,7 +234,7 @@ ${composer(u)}
     ${['case', 'grip', 'tool', 'display'].map((t) => {
       const list = bey.filter((p) => p.type === t)
       const p = list[0]
-      return `<li><a class="type-tile" href="${u(`shop/beyblade-x/?type=${t}`)}"><img src="${posterSrc(media(p)[0])}" alt="" loading="lazy" width="570" height="570"><span class="type-name">${TYPES[t]}</span><span class="type-count">${list.length}</span></a></li>`
+      return `<li><a class="type-tile" href="${u(`shop/beyblade-x/?type=${t}`)}"><img src="${posterSrc(media(p)[0])}" alt="" loading="lazy" width="570" height="570"><span class="type-name">${TYPES[t]}<span class="type-count">${list.length}</span></span></a></li>`
     }).join('')}
   </ul>
 </section>
@@ -257,22 +254,25 @@ ${composer(u)}
 </section>
 
 <section class="drop-band" id="drop" aria-labelledby="drop-h">
-  <h2 id="drop-h" class="drop-title">${ledSvg(`///${site.drop.number}`, { cls: 'drop-led', label: site.drop.number })}</h2>
+  <div class="drop-screen">
+    <h2 id="drop-h" class="sr-only">${esc(site.drop.number)}</h2>
+    <canvas class="led drop-led" data-led="${attr({ messages: [{ text: `///${site.drop.number}`, effect: 'freeze', hold: 70 }, { text: 'INCOMING', effect: 'laser' }] })}" aria-hidden="true"></canvas>
+  </div>
   <div class="drop-copy">
     <p class="drop-line">${esc(site.drop.line)}</p>
     <p>${esc(site.drop.copy)}</p>
-    ${waitlist('home')}
+    ${waitlist('home', 'btn-dark')}
   </div>
 </section>
 
 <section class="maker" aria-labelledby="maker-h">
   <div class="maker-copy">
-    <h2 id="maker-h">One designer. Every part.</h2>
+    <h2 id="maker-h">One designer, every part</h2>
     <blockquote><p>&ldquo;${esc(shop.bio)}&rdquo;</p><footer>R3D Scott, owner and designer</footer></blockquote>
     <p class="proof">${shop.sales.toLocaleString('en-CA')} orders shipped from Toronto since early 2025, rated ${shop.rating} from ${shop.reviews} reviews on Etsy.</p>
     <a class="link" href="${u('lab/')}">Inside the Lab ${ICON.arrow}</a>
   </div>
-  <canvas class="led maker-led" data-led="${attr({ cols: 44, messages: [{ preset: 'equalizer' }, { text: 'R3D', effect: 'laser' }, { preset: 'bounce' }] })}" aria-hidden="true"></canvas>
+  <canvas class="led maker-led" data-led="${attr({ cols: 44, messages: [{ text: `${shop.sales} ORDERS SHIPPED` }, { text: 'R3D', effect: 'laser' }, { text: `${shop.rating} FROM ${shop.reviews} REVIEWS` }] })}" aria-hidden="true"></canvas>
 </section>`,
 })
 
@@ -430,7 +430,7 @@ add('drops/index.html', {
   </div>
 </section>
 <section class="band" aria-labelledby="arch-h">
-  <div class="band-head"><h2 id="arch-h">The archive</h2><p>Every drop, what was in it, and how many were made.</p></div>
+  <div class="band-head"><h2 id="arch-h">The archive</h2><p>Every drop, what was in it, and its cap.</p></div>
   <ol class="archive">
     <li class="archive-row archive-next"><span class="archive-no">${ledSvg(site.drop.number.replace(/\D/g, ''), { cls: 'archive-led', label: site.drop.number })}</span><div><h3>${esc(site.drop.number)}</h3><p>${esc(site.drop.line)}</p></div><span class="archive-state">${esc(site.drop.status)}</span></li>
     ${site.archive.map((d) => {
@@ -529,7 +529,8 @@ await cp(join(ROOT, 'src/media'), join(DIST, 'media'), { recursive: true }).catc
 for (const pg of pages) {
   const file = join(DIST, pg.path)
   await mkdir(dirname(file), { recursive: true })
-  await writeFile(file, layout(pg))
+  // Doto draws a period as a cross, so headings end without one
+  await writeFile(file, layout(pg).replace(/\.(<\/h[12]>)/g, '$1'))
 }
 await writeFile(join(DIST, '.nojekyll'), '')
 console.log(`built ${pages.length} pages into dist/ (base ${BASE})`)
