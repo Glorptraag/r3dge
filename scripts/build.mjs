@@ -17,6 +17,8 @@ const byHandle = Object.fromEntries(products.map((p) => [p.handle, p]))
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c])
 const attr = (o) => esc(JSON.stringify(o))
 const money = (n) => `$${n.toFixed(2)}`
+// Doto draws '.' as a cross, so lit prices set the decimal point in the UI face
+const lit = (n) => money(n).replace('.', '<span class="dp">.</span>')
 const variantOpt = (p) => p.options?.find((o) => o.kind === 'variant')
 const vmedia = (v) => (v.media ?? v.images ?? []).map(normalize)
 const media = (p) => (p.media || p.images ? vmedia(p) : vmedia(variantOpt(p).values[0]))
@@ -93,7 +95,7 @@ function layout({ path, title, description, body, active = '', root: fixedRoot }
 </head>
 <body data-root="${esc(root)}">
 <!--
-THESIS: R3D's own LED screen is the storefront. Headlines, prices and drops speak in lit dots over a drawn ghost bed; refuses the stock dark-hero-plus-product-grid shop.
+THESIS: R3D's own LED screen is the storefront. Headlines, prices and drops speak in lit round dots; every LED panel carries its drawn ghost bed (HTML type stays text, no faked bed behind it); refuses the stock dark-hero-plus-product-grid shop.
 OWN-WORLD: matte near-black ground; LED red #ff2a1f and orange #ff7a1a lit dots with halo over ghost dots; Doto for display numerals, Barlow Semi Condensed caps for controls, Barlow body; square-cornered cells; state changes are instant swaps.
 STORY: see the drop sign, find your hobby (Beyblade X or Marathon), type your own words onto a Runner Tag, add to cart, learn the maker.
 FIRST VIEWPORT: full-bleed 11-row LED sign scrolling ///DROP-02 INCOMING across the width; beneath, headline + two actions left, Beyblade X and Marathon doors right.
@@ -137,7 +139,7 @@ ${body(u)}
 }
 
 function priceTag(p) {
-  return `<span class="price"><span class="price-from">${hasRange(p) ? 'from ' : ''}</span>${money(basePrice(p))}<span class="price-cur"> CAD</span></span>`
+  return `<span class="price"><span class="price-from">${hasRange(p) ? 'from ' : ''}</span>${lit(basePrice(p))}<span class="price-cur"> CAD</span></span>`
 }
 
 function card(p, u, { eager = false } = {}) {
@@ -157,7 +159,7 @@ function runnerTile(v, u) {
   <span class="runner-media">${mediaHtml(vmedia(v)[0], { size: 'il_570xN', w: 570, h: 570 })}</span>
   <canvas class="led runner-led" data-led="${attr({ cols: 44, glow: v.glow, messages: [{ text: v.label.replace(' Contraband', ''), effect: 'freeze', hold: 60 }, { text: v.label, effect: 'left' }] })}" aria-hidden="true"></canvas>
   <span class="sr-only">${esc(v.label)}</span>
-  <span class="runner-meta"><span>${v.edition} edition</span><span class="price">${money(v.price)}<span class="price-cur"> CAD</span></span></span>
+  <span class="runner-meta"><span>${v.edition} edition</span><span class="price">${lit(v.price)}<span class="price-cur"> CAD</span></span></span>
 </a>`
 }
 
@@ -172,13 +174,13 @@ function composer(u) {
       ${['scroll', 'laser', 'pile', 'flash'].map((fx, i) => `<label class="chip"><input type="radio" name="c-fx" value="${fx}"${i === 0 ? ' checked' : ''}><span>${fx}</span></label>`).join('')}
     </fieldset>
     <fieldset class="chips"><legend>Runner</legend>
-      ${runners.map((v, i) => `<label class="chip chip-glow" style="--led:${v.glow}"><input type="radio" name="c-runner" value="${v.key}" data-glow="${v.glow}" data-img="${posterSrc(vmedia(v)[0], 'il_570xN')}" data-label="${esc(v.label.replace(' Contraband', ''))} · ${v.edition} edition · ${money(v.price)}"${i === 2 ? ' checked' : ''}><span>${esc(v.label.replace(' Contraband', ''))}</span></label>`).join('')}
+      ${runners.map((v, i) => `<label class="chip chip-glow" style="--led:${v.glow}"><input type="radio" name="c-runner" value="${v.key}" data-glow="${v.glow}" data-img="${posterSrc(vmedia(v)[0], 'il_570xN')}" data-label="${esc(v.label.replace(' Contraband', ''))} · ${v.edition} edition" data-price="${v.price}"${i === 2 ? ' checked' : ''}><span>${esc(v.label.replace(' Contraband', ''))}</span></label>`).join('')}
     </fieldset>
     <a class="btn btn-primary" href="${u('products/runner-tag/')}" data-c-go>Put it on a Runner Tag ${ICON.arrow}</a>
   </div>
   <div class="composer-stage" style="--led:${runners[2].glow}" data-c-body>
     <div class="screen"><canvas class="led screen-led" data-led="${attr({ cols: 44, glow: runners[2].glow, messages: [{ text: 'RUNNER', effect: 'left' }, { text: 'ELEVATE THE GAME', effect: 'left' }] })}" aria-label="Preview of your text on the tag" data-c-panel></canvas></div>
-    <figure class="stage-photo"><img src="${posterSrc(vmedia(runners[2])[0], 'il_570xN')}" alt="" width="570" height="570" loading="eager" data-c-img><figcaption><span class="stage-runner" data-c-label>${(() => { const v = runners[2]; return `${esc(v.label.replace(' Contraband', ''))} · ${v.edition} edition · ${money(v.price)}` })()}</span><span class="stage-note">Live preview at the tag's real resolution, 11 × 44 pixels, in this runner's screen colour.</span></figcaption></figure>
+    <figure class="stage-photo"><img src="${posterSrc(vmedia(runners[2])[0], 'il_570xN')}" alt="" width="570" height="570" loading="eager" data-c-img><figcaption><span class="stage-runner"><span data-c-label>${esc(runners[2].label.replace(' Contraband', ''))} · ${runners[2].edition} edition</span><span class="price" data-c-price>${lit(runners[2].price)}<span class="price-cur"> CAD</span></span></span><span class="stage-note">Live preview at the tag's real resolution, 11 × 44 pixels, in this runner's screen colour.</span></figcaption></figure>
   </div>
 </section>`
 }
@@ -387,7 +389,7 @@ for (const p of products) {
     <div class="buy">
       <h1>${esc(p.name)}</h1>
       <p class="buy-sub">${esc(p.sub)}${p.fandom ? ' · Marathon-inspired, fan-made' : ''}</p>
-      <p class="buy-price"><span class="price-slot" data-price>${money(basePrice(p))}</span><span class="price-cur">CAD</span></p>
+      <p class="buy-price"><span class="price-slot" data-price>${lit(basePrice(p))}</span><span class="price-cur">CAD</span></p>
       <p class="buy-reviews">${reviewLine(p.reviews)}${p.favourites ? ` · ${p.favourites.toLocaleString('en-CA')} favourites` : ''}</p>
       <p class="buy-summary">${esc(p.summary)}</p>
       <form class="buy-form" data-buy>

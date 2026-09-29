@@ -7,6 +7,7 @@ const $ = (s, r = document) => r.querySelector(s)
 const $$ = (s, r = document) => [...r.querySelectorAll(s)]
 const ROOT = document.body.dataset.root || './'
 const money = (n) => `$${n.toFixed(2)}`
+const lit = (n) => money(n).replace('.', '<span class="dp">.</span>')
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c])
 const store = {
   get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d } catch { return d } },
@@ -61,7 +62,7 @@ function lineHtml(l, i) {
       <button type="button" class="link-btn" data-line-remove="${i}">Remove</button>
     </div>
   </div>
-  <span class="line-price">${money(l.unit * l.qty)}</span>
+  <span class="line-price">${lit(l.unit * l.qty)}</span>
 </div>`
 }
 
@@ -77,11 +78,11 @@ function renderCart() {
     $$('canvas[data-led]', el).forEach((c) => mountPanel(c, JSON.parse(c.dataset.led)))
   })
   const foot = $('[data-cart-foot]')
-  if (foot) foot.innerHTML = cart.length ? `<p class="subtotal"><span>Subtotal</span><span class="price-slot">${money(subtotal())}</span></p><p class="hint">CAD. Shipping from Toronto calculated at checkout.</p><a class="btn btn-primary btn-wide" href="${ROOT}cart/">Checkout</a>` : ''
+  if (foot) foot.innerHTML = cart.length ? `<p class="subtotal"><span>Subtotal</span><span class="price-slot">${lit(subtotal())}</span></p><p class="hint">CAD. Shipping from Toronto calculated at checkout.</p><a class="btn btn-primary btn-wide" href="${ROOT}cart/">Checkout</a>` : ''
   const co = $('[data-checkout]')
   if (co) {
     co.innerHTML = cart.length
-      ? `<p class="subtotal"><span>Subtotal</span><span class="price-slot">${money(subtotal())}</span></p>
+      ? `<p class="subtotal"><span>Subtotal</span><span class="price-slot">${lit(subtotal())}</span></p>
 <p class="hint">CAD, before shipping from Toronto.</p>
 <button class="btn btn-primary btn-wide" type="button" data-checkout-go>Check out</button>
 <div class="handoff" data-handoff hidden>
@@ -229,7 +230,7 @@ if (productEl) {
         })
       })
     }
-    $('[data-price]', productEl).textContent = money(unit())
+    $('[data-price]', productEl).innerHTML = lit(unit())
     const etsy = variant()?.etsy ?? data.etsy
     $('[data-etsy]', form).href = etsy
     const stock = $('[data-stock]', form)
@@ -364,6 +365,7 @@ if (comp) {
     const photo = $('[data-c-img]', comp)
     if (photo.getAttribute('src') !== runner.dataset.img) photo.src = runner.dataset.img
     $('[data-c-label]', comp).textContent = runner.dataset.label
+    $('[data-c-price]', comp).innerHTML = `${lit(+runner.dataset.price)}<span class="price-cur"> CAD</span>`
     const q = new URLSearchParams({ runner: runner.value, fx })
     t.forEach((v, i) => v && q.set(`t${i + 1}`, v))
     go.href = `${base}?${q}`
