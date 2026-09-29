@@ -1,0 +1,10 @@
+{
+  "name": "r3dge",
+  "private": true,
+  "type": "module",
+  "description": "Concept storefront for R3D Game Essentials (static site, GitHub Pages)",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "BASE=/ node scripts/build.mjs && python3 -m http.server 4173 --directory dist"
+  }
+}

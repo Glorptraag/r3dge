@@ -1,0 +1,1039 @@
+{
+ "source": "Etsy shop R3DGameEssentials, scraped 2026-09-26. Prices CAD as listed that day (shop-wide 15% sale).",
+ "shop": {
+  "name": "R3D Game Essentials",
+  "owner": "R3D Scott",
+  "location": "Toronto, Ontario",
+  "sales": 1093,
+  "reviews": 286,
+  "rating": 4.9,
+  "etsy": "https://www.etsy.com/ca/shop/R3DGameEssentials",
+  "x": "https://x.com/r3d_ge",
+  "bio": "Thanks so much for visiting my page! I am an animator and 3D artist and love Beyblade, Trading card games and Video games! I hope to fill out my store with tons of products for all these my favorite hobbies"
+ },
+ "products": [
+  {
+   "handle": "runner-tag",
+   "name": "Runner Tag",
+   "sub": "Digital LED keychain",
+   "line": "marathon",
+   "type": "keychain",
+   "summary": "A wearable 11 × 44 LED tag with pre-loaded animations and two text frames you write yourself. Marathon-inspired, fan-made.",
+   "features": [
+    "Vibrant LED screen with pre-loaded animations (faction logos, arrows and more)",
+    "Two customisable text frames for names or phrases",
+    "Add up to three charms: Key Card, Bullet, Rook Head",
+    "Contraband edition (CRYO) ships with the exclusive Compiler Ganglion charm"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "led": {
+    "rows": 11,
+    "cols": 44,
+    "frames": 2
+   },
+   "personalise": {
+    "kind": "led",
+    "frames": 2,
+    "max": 24,
+    "label": "Tag text"
+   },
+   "options": [
+    {
+     "name": "Runner",
+     "kind": "variant",
+     "values": [
+      {
+       "label": "ONI",
+       "key": "oni",
+       "price": 59.49,
+       "etsy": "https://www.etsy.com/ca/listing/4517603404/digital-keychain-veroni-standard-edition",
+       "images": [
+        "https://i.etsystatic.com/53777731/r/il/d6dd00/8188881831/il_fullxfull.8188881831_jdl9.jpg",
+        "https://i.etsystatic.com/53777731/r/il/a7720b/8140984056/il_fullxfull.8140984056_2hs8.jpg",
+        "https://i.etsystatic.com/53777731/r/il/00ab09/8141119208/il_fullxfull.8141119208_9izt.jpg"
+       ],
+       "glow": "#46e27a",
+       "edition": "Standard",
+       "low": false
+      },
+      {
+       "label": "DUR4ND4L",
+       "key": "dur4nd4l",
+       "price": 59.49,
+       "etsy": "https://www.etsy.com/ca/listing/4521380369/digital-keychain-verdur4nd4l-standard",
+       "images": [
+        "https://i.etsystatic.com/53777731/r/il/c85d0d/8188886161/il_fullxfull.8188886161_mci9.jpg",
+        "https://i.etsystatic.com/53777731/r/il/cd20fc/8188888413/il_fullxfull.8188888413_5qhi.jpg",
+        "https://i.etsystatic.com/53777731/r/il/ca6614/8189016831/il_fullxfull.8189016831_kpw4.jpg"
+       ],
+       "glow": "#46e27a",
+       "edition": "Standard",
+       "low": false
+      },
+      {
+       "label": "_GANTRY",
+       "key": "gantry",
+       "price": 59.49,
+       "etsy": "https://www.etsy.com/ca/listing/4521380881/digital-keychain-vergantry-standard",
+       "images": [
+        "https://i.etsystatic.com/53777731/r/il/0eeb10/8140975712/il_fullxfull.8140975712_8a35.jpg",
+        "https://i.etsystatic.com/53777731/r/il/b95262/8140979396/il_fullxfull.8140979396_te98.jpg",
+        "https://i.etsystatic.com/53777731/r/il/86053d/8141119650/il_fullxfull.8141119650_2ain.jpg"
+       ],
+       "glow": "#ff5a1f",
+       "edition": "Standard",
+       "low": false
+      },
+      {
+       "label": "CHARTER",
+       "key": "charter",
+       "price": 59.49,
+       "etsy": "https://www.etsy.com/ca/listing/4521381185/digital-keychain-vercharter-standard",
+       "images": [
+        "https://i.etsystatic.com/53777731/r/il/3ec55a/8188884829/il_fullxfull.8188884829_1nkd.jpg",
+        "https://i.etsystatic.com/53777731/r/il/6c30d7/8140985182/il_fullxfull.8140985182_5uxt.jpg",
+        "https://i.etsystatic.com/53777731/r/il/ff4238/8189016361/il_fullxfull.8189016361_si0b.jpg"
+       ],
+       "glow": "#ff2a1f",
+       "edition": "Standard",
+       "low": false
+      },
+      {
+       "label": "CRYO Contraband",
+       "key": "cryo",
+       "price": 83.29,
+       "etsy": "https://www.etsy.com/ca/listing/4521389608/digital-keychain-ver-cyro-contraband",
+       "images": [
+        "https://i.etsystatic.com/53777731/r/il/8ba374/8140981486/il_fullxfull.8140981486_m178.jpg",
+        "https://i.etsystatic.com/53777731/r/il/b4fab3/8140981006/il_fullxfull.8140981006_i6uk.jpg",
+        "https://i.etsystatic.com/53777731/r/il/97b4f2/8189014969/il_fullxfull.8189014969_apr8.jpg"
+       ],
+       "glow": "#ff2a1f",
+       "edition": "Contraband",
+       "low": false
+      },
+      {
+       "label": "NONA",
+       "key": "nona",
+       "price": 59.49,
+       "etsy": "https://www.etsy.com/ca/listing/4521401550/digital-keychain-vernona-standard",
+       "images": [
+        "https://i.etsystatic.com/53777731/r/il/c30663/8188862913/il_fullxfull.8188862913_ryjk.jpg",
+        "https://i.etsystatic.com/53777731/r/il/2f3321/8188878663/il_fullxfull.8188878663_he62.jpg",
+        "https://i.etsystatic.com/53777731/r/il/eb5824/8189015475/il_fullxfull.8189015475_7szg.jpg"
+       ],
+       "glow": "#f3efe9",
+       "edition": "Standard",
+       "low": false
+      },
+      {
+       "label": "GAIUS",
+       "key": "gaius",
+       "price": 59.49,
+       "etsy": "https://www.etsy.com/ca/listing/4521394301/digital-keychain-vergaius-standard",
+       "images": [
+        "https://i.etsystatic.com/53777731/r/il/a62c93/8140969992/il_fullxfull.8140969992_q0qr.jpg",
+        "https://i.etsystatic.com/53777731/r/il/89bf2d/8140978938/il_fullxfull.8140978938_h84x.jpg",
+        "https://i.etsystatic.com/53777731/r/il/f25564/8189019227/il_fullxfull.8189019227_bpru.jpg"
+       ],
+       "glow": "#ff2a1f",
+       "edition": "Standard",
+       "low": true
+      },
+      {
+       "label": "VULCAN",
+       "key": "vulcan",
+       "price": 59.49,
+       "etsy": "https://www.etsy.com/ca/listing/4521399826/digital-keychain-vervulcan-standard",
+       "images": [
+        "https://i.etsystatic.com/53777731/r/il/baaffb/8140903208/il_fullxfull.8140903208_douw.jpg",
+        "https://i.etsystatic.com/53777731/r/il/f82242/8141121716/il_fullxfull.8141121716_8wuu.jpg",
+        "https://i.etsystatic.com/53777731/r/il/578783/8189019773/il_fullxfull.8189019773_duwa.jpg"
+       ],
+       "glow": "#9fc8ff",
+       "edition": "Standard",
+       "low": false
+      }
+     ]
+    },
+    {
+     "name": "Charms",
+     "kind": "add",
+     "values": [
+      {
+       "label": "No charms",
+       "add": 0
+      },
+      {
+       "label": "Key Card charm",
+       "add": 5.95
+      },
+      {
+       "label": "Bullet charm",
+       "add": 5.95
+      },
+      {
+       "label": "Rook Head charm",
+       "add": 5.95
+      },
+      {
+       "label": "Bullet + Rook",
+       "add": 11.05
+      },
+      {
+       "label": "Key Card + Bullet",
+       "add": 11.05
+      },
+      {
+       "label": "Rook + Key Card",
+       "add": 11.05
+      },
+      {
+       "label": "All three charms",
+       "add": 14.45
+      }
+     ]
+    }
+   ],
+   "reviews": {
+    "count": 20,
+    "rating": 5.0
+   },
+   "favourites": 704,
+   "fandom": "Marathon"
+  },
+  {
+   "handle": "protector-phone-charm",
+   "name": "Protector Phone Charm",
+   "sub": "Shield charm with lanyard",
+   "line": "marathon",
+   "type": "charm",
+   "summary": "A shield phone charm on a lanyard. Marathon-inspired, fan-made.",
+   "features": [
+    "Shield charm with phone lanyard"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "price": 9.34,
+   "etsy": "https://www.etsy.com/ca/listing/4522558748/protector-phone-charm-marathon-inspired",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/63499e/8189055345/il_fullxfull.8189055345_h8sx.jpg",
+    "https://i.etsystatic.com/53777731/r/il/f34b99/8141156636/il_fullxfull.8141156636_p1gt.jpg"
+   ],
+   "reviews": {
+    "count": 2,
+    "rating": 4.5
+   },
+   "favourites": 70,
+   "fandom": "Marathon"
+  },
+  {
+   "handle": "x-sync-dual-launcher-link",
+   "name": "X-SYNC",
+   "sub": "Dual launcher link",
+   "line": "beyblade-x",
+   "type": "tool",
+   "summary": "Links two string launchers so you can fire two beys at once.",
+   "features": [
+    "Links two string launchers for simultaneous launches",
+    "Includes the launcher link and the dual slip-grip",
+    "Does not include a string launcher or official grip"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "price": 16.99,
+   "etsy": "https://www.etsy.com/ca/listing/4504677145/x-sync-dual-launcher-link-beyblade-x",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/71981e/8019579870/il_fullxfull.8019579870_fw64.jpg",
+    "https://i.etsystatic.com/53777731/r/il/01ed69/8065435253/il_fullxfull.8065435253_a25r.jpg",
+    "https://i.etsystatic.com/53777731/r/il/8e56b4/8065436195/il_fullxfull.8065436195_420l.jpg",
+    "https://i.etsystatic.com/53777731/r/il/42d886/8017570810/il_fullxfull.8017570810_453h.jpg",
+    "https://i.etsystatic.com/53777731/r/il/6a958a/8065489055/il_fullxfull.8065489055_7ptf.jpg"
+   ],
+   "options": [
+    {
+     "name": "Primary colour",
+     "kind": "choice",
+     "values": [
+      {
+       "label": "Black"
+      },
+      {
+       "label": "White"
+      },
+      {
+       "label": "Blue"
+      },
+      {
+       "label": "Orange"
+      },
+      {
+       "label": "Pink"
+      },
+      {
+       "label": "Yellow"
+      },
+      {
+       "label": "Red"
+      },
+      {
+       "label": "Purple"
+      },
+      {
+       "label": "Green"
+      }
+     ]
+    },
+    {
+     "name": "Secondary colour",
+     "kind": "choice",
+     "values": [
+      {
+       "label": "Black"
+      },
+      {
+       "label": "White"
+      },
+      {
+       "label": "Blue"
+      },
+      {
+       "label": "Orange"
+      },
+      {
+       "label": "Purple"
+      },
+      {
+       "label": "Red"
+      },
+      {
+       "label": "Yellow"
+      },
+      {
+       "label": "Green"
+      },
+      {
+       "label": "Pink"
+      }
+     ]
+    }
+   ],
+   "reviews": null,
+   "favourites": 33,
+   "compat": [
+    "String Launcher"
+   ]
+  },
+  {
+   "handle": "artisan-x-grip",
+   "name": "Artisan X-Grip",
+   "sub": "Artisan Edition launcher grip",
+   "line": "beyblade-x",
+   "type": "grip",
+   "summary": "The Artisan Edition of the X-Grip, built right- or left-handed and personalised at checkout.",
+   "features": [
+    "Right- or left-handed build",
+    "Personalised at checkout"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "price": 59.49,
+   "etsy": "https://www.etsy.com/ca/listing/4384298467/artisan-edition-x-grip-for-beyblade-x",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/b37e29/7271964758/il_fullxfull.7271964758_9j1x.jpg",
+    "https://i.etsystatic.com/53777731/r/il/d5cd7b/7271890112/il_fullxfull.7271890112_jbgc.jpg",
+    "https://i.etsystatic.com/53777731/r/il/5dc7a2/7319837041/il_fullxfull.7319837041_r3t4.jpg",
+    "https://i.etsystatic.com/53777731/r/il/705534/7271890048/il_fullxfull.7271890048_ar32.jpg",
+    "https://i.etsystatic.com/53777731/r/il/831004/7319836979/il_fullxfull.7319836979_tr83.jpg"
+   ],
+   "options": [
+    {
+     "name": "Hand",
+     "kind": "choice",
+     "values": [
+      {
+       "label": "Right (standard)"
+      },
+      {
+       "label": "Left"
+      }
+     ]
+    }
+   ],
+   "personalise": {
+    "kind": "text",
+    "max": 20,
+    "label": "Personalisation"
+   },
+   "reviews": {
+    "count": 6,
+    "rating": 5.0
+   },
+   "favourites": 125,
+   "needsCopy": true
+  },
+  {
+   "handle": "l3d-challenger-box",
+   "name": "L3D Challenger Box",
+   "sub": "3on3 deck case with LED screen",
+   "line": "beyblade-x",
+   "type": "case",
+   "summary": "A 3-on-3 deck case with a programmable LED screen: animated styles plus two custom text frames.",
+   "features": [
+    "Programmable LED screen with animated styles",
+    "Two custom text frames of your choice",
+    "Room for the tallest combos, launchers and accessories"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "price": 63.74,
+   "etsy": "https://www.etsy.com/ca/listing/4384169799/l3d-challenger-box-for-beyblade-x",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/f5ded8/7319191393/il_fullxfull.7319191393_msed.jpg",
+    "https://i.etsystatic.com/53777731/r/il/9f800c/7319111863/il_fullxfull.7319111863_n9ql.jpg",
+    "https://i.etsystatic.com/53777731/r/il/4e05ef/7271165628/il_fullxfull.7271165628_sbds.jpg"
+   ],
+   "led": {
+    "rows": 11,
+    "cols": 44,
+    "frames": 2
+   },
+   "options": [
+    {
+     "name": "Colourway",
+     "kind": "choice",
+     "values": [
+      {
+       "label": "Black and Gold"
+      },
+      {
+       "label": "White and Silver"
+      }
+     ]
+    },
+    {
+     "name": "LED colour",
+     "kind": "led",
+     "values": [
+      {
+       "label": "Blue",
+       "glow": "#3d8bff"
+      },
+      {
+       "label": "Green",
+       "glow": "#46e27a"
+      },
+      {
+       "label": "Red",
+       "glow": "#ff2a1f"
+      },
+      {
+       "label": "White",
+       "glow": "#f3efe9"
+      }
+     ]
+    }
+   ],
+   "personalise": {
+    "kind": "led",
+    "frames": 2,
+    "max": 24,
+    "label": "Screen text"
+   },
+   "reviews": {
+    "count": 5,
+    "rating": 5.0
+   },
+   "favourites": 131,
+   "compat": [
+    "3on3 deck"
+   ]
+  },
+  {
+   "handle": "challenger-box",
+   "name": "Challenger Box",
+   "sub": "3on3 deck case",
+   "line": "beyblade-x",
+   "type": "case",
+   "summary": "A new way to carry your 3-on-3 deck, with space for even the tallest combos.",
+   "features": [
+    "Carries a full 3-on-3 deck",
+    "Space for the tallest combos"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "price": 33.99,
+   "etsy": "https://www.etsy.com/ca/listing/4384168521/challenger-box-for-beyblade-x",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/284f87/7271196428/il_fullxfull.7271196428_sorg.jpg",
+    "https://i.etsystatic.com/53777731/r/il/1534f4/7271165634/il_fullxfull.7271165634_eoa4.jpg",
+    "https://i.etsystatic.com/53777731/r/il/fba844/7319111887/il_fullxfull.7319111887_2fef.jpg",
+    "https://i.etsystatic.com/53777731/r/il/4e05ef/7271165628/il_fullxfull.7271165628_sbds.jpg",
+    "https://i.etsystatic.com/53777731/r/il/5b4b6e/7319111881/il_fullxfull.7319111881_reri.jpg",
+    "https://i.etsystatic.com/53777731/r/il/9f800c/7319111863/il_fullxfull.7319111863_n9ql.jpg",
+    "https://i.etsystatic.com/53777731/r/il/36b20f/7319111893/il_fullxfull.7319111893_ik66.jpg",
+    "https://i.etsystatic.com/53777731/r/il/0bef97/7319111885/il_fullxfull.7319111885_4dl4.jpg"
+   ],
+   "options": [
+    {
+     "name": "Colourway",
+     "kind": "choice",
+     "values": [
+      {
+       "label": "Black and Gold"
+      },
+      {
+       "label": "White and Silver"
+      }
+     ]
+    }
+   ],
+   "reviews": {
+    "count": 6,
+    "rating": 5.0
+   },
+   "favourites": 78,
+   "compat": [
+    "3on3 deck"
+   ]
+  },
+  {
+   "handle": "x-display",
+   "name": "X-Display",
+   "sub": "LED launcher topper",
+   "line": "beyblade-x",
+   "type": "display",
+   "summary": "An 11 × 48 LED screen that mounts on top of your winder or string launcher.",
+   "features": [
+    "11 × 48 pixel LED screen",
+    "Pre-installed animations: flames, arrows and more",
+    "Two customisable text frames: your name, a battle motto, anything",
+    "Mounts on a winder or string launcher"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "price": 38.24,
+   "etsy": "https://www.etsy.com/ca/listing/4384234508/x-display-for-beyblade-x",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/6166ca/7271602424/il_fullxfull.7271602424_6rtv.jpg",
+    "https://i.etsystatic.com/53777731/r/il/911d13/7319545959/il_fullxfull.7319545959_qbth.jpg",
+    "https://i.etsystatic.com/53777731/r/il/6ce5bf/7271600760/il_fullxfull.7271600760_8s6j.jpg",
+    "https://i.etsystatic.com/53777731/r/il/e159e5/7271600656/il_fullxfull.7271600656_kp30.jpg",
+    "https://i.etsystatic.com/53777731/r/il/824b13/7271600686/il_fullxfull.7271600686_h3fz.jpg"
+   ],
+   "led": {
+    "rows": 11,
+    "cols": 48,
+    "frames": 2
+   },
+   "options": [
+    {
+     "name": "LED colour",
+     "kind": "led",
+     "values": [
+      {
+       "label": "Blue",
+       "glow": "#3d8bff"
+      },
+      {
+       "label": "Green",
+       "glow": "#46e27a"
+      },
+      {
+       "label": "Red",
+       "glow": "#ff2a1f"
+      },
+      {
+       "label": "White",
+       "glow": "#f3efe9"
+      }
+     ]
+    }
+   ],
+   "personalise": {
+    "kind": "led",
+    "frames": 2,
+    "max": 24,
+    "label": "Screen text"
+   },
+   "reviews": {
+    "count": 20,
+    "rating": 5.0
+   },
+   "favourites": 368,
+   "compat": [
+    "Winder Launcher",
+    "String Launcher"
+   ]
+  },
+  {
+   "handle": "ratchet-balancing-tool",
+   "name": "Ratchet Balancing Tool",
+   "sub": "Combo tuning tool",
+   "line": "beyblade-x",
+   "type": "tool",
+   "summary": "Fine-tune ratchets for longer-spinning stamina combos or a bigger offset for attack.",
+   "features": [
+    "Optimises stamina combos for longer spin times",
+    "Creates a larger offset for harder-hitting attack combos",
+    "In R3D testing it often decides spin-out finishes in stamina matchups"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "price": 16.99,
+   "etsy": "https://www.etsy.com/ca/listing/4384237192/ratchet-balancing-tool-for-beybladex",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/88b1dd/7319553527/il_fullxfull.7319553527_f4gj.jpg",
+    "https://i.etsystatic.com/53777731/r/il/143236/7271607540/il_fullxfull.7271607540_exfo.jpg",
+    "https://i.etsystatic.com/53777731/r/il/0f8ad7/7319552647/il_fullxfull.7319552647_nulf.jpg",
+    "https://i.etsystatic.com/53777731/r/il/9cd401/7319552635/il_fullxfull.7319552635_1xhv.jpg"
+   ],
+   "reviews": {
+    "count": 44,
+    "rating": 4.6
+   },
+   "favourites": 344
+  },
+  {
+   "handle": "x-grip",
+   "name": "X-Grip",
+   "sub": "Ergonomic winder grip",
+   "line": "beyblade-x",
+   "type": "grip",
+   "summary": "An ergonomic grip for the winder launcher, in blue or green, right- or left-handed.",
+   "features": [
+    "Ergonomic grip for the winder launcher",
+    "Blue or green accent",
+    "Right- or left-handed"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "price": 29.74,
+   "etsy": "https://www.etsy.com/ca/listing/4384258609/x-grip-for-beyblade-x",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/af14d5/7319640459/il_fullxfull.7319640459_8v2l.jpg",
+    "https://i.etsystatic.com/53777731/r/il/7ef6dc/7271670746/il_fullxfull.7271670746_d66n.jpg",
+    "https://i.etsystatic.com/53777731/r/il/7d338b/7271670752/il_fullxfull.7271670752_jnw8.jpg"
+   ],
+   "options": [
+    {
+     "name": "Accent",
+     "kind": "choice",
+     "values": [
+      {
+       "label": "Blue"
+      },
+      {
+       "label": "Green"
+      }
+     ]
+    },
+    {
+     "name": "Hand",
+     "kind": "choice",
+     "values": [
+      {
+       "label": "Right (standard)"
+      },
+      {
+       "label": "Left"
+      }
+     ]
+    }
+   ],
+   "reviews": {
+    "count": 14,
+    "rating": 4.9
+   },
+   "favourites": 103,
+   "compat": [
+    "Winder Launcher"
+   ]
+  },
+  {
+   "handle": "slim-grip",
+   "name": "Slim-Grip",
+   "sub": "Universal launcher handle",
+   "line": "beyblade-x",
+   "type": "grip",
+   "summary": "A low-profile universal handle that fits both winder and string launchers.",
+   "features": [
+    "Universal fit for winder or string launchers",
+    "Low-profile and lightweight",
+    "Ergonomic comfort and control"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "price": 19.54,
+   "etsy": "https://www.etsy.com/ca/listing/4384265677/slim-grip-for-beyblade-x",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/454820/7271733452/il_fullxfull.7271733452_5sh6.jpg",
+    "https://i.etsystatic.com/53777731/r/il/647d6d/7271725286/il_fullxfull.7271725286_843s.jpg",
+    "https://i.etsystatic.com/53777731/r/il/7821d0/7271725290/il_fullxfull.7271725290_alkq.jpg",
+    "https://i.etsystatic.com/53777731/r/il/e70fef/7271725292/il_fullxfull.7271725292_lbph.jpg"
+   ],
+   "reviews": {
+    "count": 9,
+    "rating": 5.0
+   },
+   "favourites": 182,
+   "compat": [
+    "Winder Launcher",
+    "String Launcher"
+   ],
+   "low": true
+  },
+  {
+   "handle": "x-grip-print-files",
+   "name": "X-Grip Print Files",
+   "sub": "Digital download (STL/OBJ)",
+   "line": "beyblade-x",
+   "type": "digital",
+   "summary": "Print the X-Grip yourself: Bambu Lab-optimised files, standard and left-handed.",
+   "features": [
+    "Bambu Lab-optimised files for A1, P1S, X1C and H2D",
+    "Standard and left-handed grip, STL/OBJ parts",
+    "Text printing instructions included",
+    "Assembles with any instant glue",
+    "Personal, non-commercial use only; not for redistribution"
+   ],
+   "price": 16.99,
+   "etsy": "https://www.etsy.com/ca/listing/4384292923/digital-download-x-grip-for-beyblade-x",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/884315/7319702823/il_fullxfull.7319702823_gchs.jpg",
+    "https://i.etsystatic.com/53777731/r/il/710f65/7271741268/il_fullxfull.7271741268_8n9z.jpg",
+    "https://i.etsystatic.com/53777731/r/il/a61de1/7319701987/il_fullxfull.7319701987_649h.jpg",
+    "https://i.etsystatic.com/53777731/r/il/54095d/7271756160/il_fullxfull.7271756160_gkru.jpg"
+   ],
+   "reviews": {
+    "count": 2,
+    "rating": 5.0
+   },
+   "favourites": 40,
+   "digital": true
+  },
+  {
+   "handle": "bitlab-01",
+   "name": "BITLAB///01",
+   "sub": "Custom bits, non-competitive",
+   "line": "beyblade-x",
+   "type": "tool",
+   "summary": "Four experimental bits for casual play: Drill Driver, Low Level, Faceted Lift and Tri Rush.",
+   "features": [
+    "Drill Driver: an insanely tall bit",
+    "Low Level: low, aggressive, built for X-dashing",
+    "Faceted Lift: Elevate with a needle point",
+    "Tri Rush: aggressive with an unpredictable pattern",
+    "Dual-printed: PETG stems, PLA tips softer than the arena",
+    "Non-competitive: not tournament legal"
+   ],
+   "materials": [
+    "PETG",
+    "PLA"
+   ],
+   "price": 13.59,
+   "etsy": "https://www.etsy.com/ca/listing/4384244334/bitlab01-non-competitive-custom-bits-for",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/944c6b/7319604929/il_fullxfull.7319604929_qhvv.jpg",
+    "https://i.etsystatic.com/53777731/r/il/ef8ece/7319569967/il_fullxfull.7319569967_jt8x.jpg",
+    "https://i.etsystatic.com/53777731/r/il/742ad3/7319569965/il_fullxfull.7319569965_88o0.jpg"
+   ],
+   "reviews": {
+    "count": 5,
+    "rating": 5.0
+   },
+   "favourites": 124
+  },
+  {
+   "handle": "excalibur-strike-grip",
+   "name": "Excalibur Strike Grip",
+   "sub": "Sword-style ripcord handle",
+   "line": "beyblade-x",
+   "type": "grip",
+   "summary": "A tough Excalibur-style handle for the Hold Launcher ripcord. Assembles from three parts.",
+   "features": [
+    "Fits the Hold Launcher ripcord",
+    "Assembles from three parts"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "price": 21.24,
+   "etsy": "https://www.etsy.com/ca/listing/4384145765/excalibur-strike-grip-compatible-with",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/299751/7319496335/il_fullxfull.7319496335_l1j8.jpg",
+    "https://i.etsystatic.com/53777731/r/il/de0d70/7319001287/il_fullxfull.7319001287_8zmy.jpg",
+    "https://i.etsystatic.com/53777731/r/il/567329/7271055848/il_fullxfull.7271055848_789h.jpg"
+   ],
+   "reviews": {
+    "count": 5,
+    "rating": 5.0
+   },
+   "favourites": 159,
+   "compat": [
+    "Hold Launcher"
+   ]
+  },
+  {
+   "handle": "samurai-strike-grip",
+   "name": "Samurai Strike Grip",
+   "sub": "Katana-style ripcord handle",
+   "line": "beyblade-x",
+   "type": "grip",
+   "summary": "A tough katana-style ripcord handle, made for the Hold or Winder launcher. Three parts, built to last.",
+   "features": [
+    "Hold Launcher or Winder Launcher ripcord versions",
+    "Assembles from three parts"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "options": [
+    {
+     "name": "Ripcord",
+     "kind": "variant",
+     "values": [
+      {
+       "label": "Hold Launcher",
+       "key": "hold",
+       "price": 21.24,
+       "etsy": "https://www.etsy.com/ca/listing/1880714065/samurai-strike-grip-compatible-with-the",
+       "images": [
+        "https://i.etsystatic.com/53777731/r/il/d7f808/6677346518/il_fullxfull.6677346518_r8hr.jpg",
+        "https://i.etsystatic.com/53777731/r/il/ed2a33/6725387643/il_fullxfull.6725387643_o7hz.jpg",
+        "https://i.etsystatic.com/53777731/r/il/0e1c64/6725387625/il_fullxfull.6725387625_izn9.jpg"
+       ]
+      },
+      {
+       "label": "Winder Launcher",
+       "key": "winder",
+       "price": 21.24,
+       "etsy": "https://www.etsy.com/ca/listing/1880712597/samurai-strike-grip-compatible-with-the",
+       "images": [
+        "https://i.etsystatic.com/53777731/r/il/5beb34/6725375537/il_fullxfull.6725375537_act9.jpg",
+        "https://i.etsystatic.com/53777731/r/il/f3c12c/6677334728/il_fullxfull.6677334728_30vc.jpg",
+        "https://i.etsystatic.com/53777731/r/il/0bfb95/6677334730/il_fullxfull.6677334730_blb4.jpg"
+       ]
+      }
+     ]
+    }
+   ],
+   "reviews": {
+    "count": 59,
+    "rating": 4.8
+   },
+   "favourites": 740,
+   "compat": [
+    "Hold Launcher",
+    "Winder Launcher"
+   ]
+  },
+  {
+   "handle": "armoryx-deck-case",
+   "name": "ArmoryX",
+   "sub": "3on3 deck case",
+   "line": "beyblade-x",
+   "type": "case",
+   "summary": "The deck case built for battle days: wrist lanyard, peek-proof lid, locking magnetic clasp.",
+   "features": [
+    "Wrist lanyard",
+    "Peek-proof lid that doubles as a shield",
+    "Locking lid with magnetic clasp",
+    "Fits every official combination, shortest to tallest"
+   ],
+   "materials": [
+    "PLA",
+    "Magnets",
+    "Nylon"
+   ],
+   "price": 50.99,
+   "etsy": "https://www.etsy.com/ca/listing/1879894035/armoryx-3on3-deck-case-for-beybladex",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/fa9e71/6773137644/il_fullxfull.6773137644_mz8x.jpg",
+    "https://i.etsystatic.com/53777731/r/il/2bc158/6996357629/il_fullxfull.6996357629_fr7d.jpg",
+    "https://i.etsystatic.com/53777731/r/il/0c9440/6673021596/il_fullxfull.6673021596_lofd.jpg",
+    "https://i.etsystatic.com/53777731/r/il/26bf90/6721065941/il_fullxfull.6721065941_6i51.jpg",
+    "https://i.etsystatic.com/53777731/r/il/e16b58/6673021594/il_fullxfull.6673021594_ozuw.jpg",
+    "https://i.etsystatic.com/53777731/r/il/79c5ff/6673021612/il_fullxfull.6673021612_pron.jpg"
+   ],
+   "options": [
+    {
+     "name": "Side panels",
+     "kind": "add",
+     "values": [
+      {
+       "label": "No personalisation",
+       "add": 0
+      },
+      {
+       "label": "One side",
+       "add": 8.5,
+       "text": true
+      },
+      {
+       "label": "Both sides",
+       "add": 12.75,
+       "text": true
+      }
+     ]
+    }
+   ],
+   "personalise": {
+    "kind": "text",
+    "max": 16,
+    "label": "Panel text",
+    "when": "Side panels"
+   },
+   "reviews": {
+    "count": 24,
+    "rating": 4.9
+   },
+   "favourites": 425,
+   "compat": [
+    "3on3 deck"
+   ],
+   "low": true
+  },
+  {
+   "handle": "elevate-display-stand",
+   "name": "Elevate Display Stand",
+   "sub": "Three-pack",
+   "line": "beyblade-x",
+   "type": "display",
+   "summary": "Three two-colour stands that show off any X-series top.",
+   "features": [
+    "Sold as a three-pack",
+    "Two-colour design",
+    "Fits all X-series parts"
+   ],
+   "materials": [
+    "PLA"
+   ],
+   "price": 12.74,
+   "etsy": "https://www.etsy.com/ca/listing/1880663283/elevate-display-stand-3-pack-compatible",
+   "images": [
+    "https://i.etsystatic.com/53777731/r/il/92826c/6677044948/il_fullxfull.6677044948_n0dw.jpg",
+    "https://i.etsystatic.com/53777731/r/il/0dacba/6725086393/il_fullxfull.6725086393_65xi.jpg",
+    "https://i.etsystatic.com/53777731/r/il/109f98/6725086399/il_fullxfull.6725086399_79vw.jpg"
+   ],
+   "reviews": {
+    "count": 4,
+    "rating": 5.0
+   },
+   "favourites": 106
+  },
+  {
+   "handle": "foundersx-deck-case",
+   "name": "FoundersX",
+   "sub": "3on3 deck case, launch edition",
+   "line": "beyblade-x",
+   "type": "case",
+   "drop": "DROP-01",
+   "summary": "The case that launched R3D. Lanyard, peek-proof lid, magnetic clasp, capped at 300 per style.",
+   "features": [
+    "Wrist lanyard",
+    "Peek-proof lid that doubles as a shield",
+    "Locking lid with magnetic clasp",
+    "Fits every official X-series combination",
+    "Launch edition, capped at 300 units per style"
+   ],
+   "materials": [
+    "PLA",
+    "Magnets",
+    "Nylon"
+   ],
+   "options": [
+    {
+     "name": "Edition",
+     "kind": "variant",
+     "values": [
+      {
+       "label": "Black",
+       "key": "black",
+       "price": 67.99,
+       "etsy": "https://www.etsy.com/ca/listing/1866530972/foundersx-3on3-deck-case-black-for",
+       "images": [
+        "https://i.etsystatic.com/53777731/r/il/54b68a/6821150735/il_fullxfull.6821150735_n3gc.jpg",
+        "https://i.etsystatic.com/53777731/r/il/92a7ee/6948396810/il_fullxfull.6948396810_hzz0.jpg",
+        "https://i.etsystatic.com/53777731/r/il/dfc823/6677375690/il_fullxfull.6677375690_sjjd.jpg",
+        "https://i.etsystatic.com/53777731/r/il/f3e8e0/6725416523/il_fullxfull.6725416523_7baj.jpg",
+        "https://i.etsystatic.com/53777731/r/il/693b7d/6725416517/il_fullxfull.6725416517_7iyi.jpg",
+        "https://i.etsystatic.com/53777731/r/il/581ba0/6677375698/il_fullxfull.6677375698_jd8l.jpg"
+       ],
+       "panels": [
+        0,
+        8.5,
+        12.75
+       ]
+      },
+      {
+       "label": "White",
+       "key": "white",
+       "price": 67.99,
+       "etsy": "https://www.etsy.com/ca/listing/1880717965/foundersx-beybladex-deck-case-white-3on3",
+       "images": [
+        "https://i.etsystatic.com/53777731/r/il/bcb396/6773138132/il_fullxfull.6773138132_k411.jpg",
+        "https://i.etsystatic.com/53777731/r/il/4d2b9d/6996366077/il_fullxfull.6996366077_7qya.jpg",
+        "https://i.etsystatic.com/53777731/r/il/01bb56/6725409123/il_fullxfull.6725409123_5ahy.jpg",
+        "https://i.etsystatic.com/53777731/r/il/0eb9c7/6725409137/il_fullxfull.6725409137_hnto.jpg",
+        "https://i.etsystatic.com/53777731/r/il/14b66d/6725409145/il_fullxfull.6725409145_a427.jpg",
+        "https://i.etsystatic.com/53777731/r/il/521ae5/6725409141/il_fullxfull.6725409141_q1pa.jpg"
+       ],
+       "panels": [
+        0,
+        5.1,
+        8.5
+       ],
+       "low": true
+      }
+     ]
+    },
+    {
+     "name": "Side panels",
+     "kind": "add",
+     "values": [
+      {
+       "label": "No personalisation",
+       "add": 0
+      },
+      {
+       "label": "One side",
+       "add": 8.5,
+       "text": true
+      },
+      {
+       "label": "Both sides",
+       "add": 12.75,
+       "text": true
+      }
+     ]
+    }
+   ],
+   "personalise": {
+    "kind": "text",
+    "max": 16,
+    "label": "Panel text",
+    "when": "Side panels"
+   },
+   "reviews": {
+    "count": 36,
+    "rating": 4.9
+   },
+   "favourites": 369,
+   "compat": [
+    "3on3 deck"
+   ]
+  }
+ ]
+}

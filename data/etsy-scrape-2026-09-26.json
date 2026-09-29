@@ -1,0 +1,854 @@
+{
+  "scraped_at": "2026-09-26",
+  "shop": {
+    "name": "R3DGameEssentials",
+    "url": "https://www.etsy.com/ca/shop/R3DGameEssentials",
+    "location": "Toronto, Ontario",
+    "sales": 1093,
+    "sales_display": "1.1k",
+    "review_count": 286,
+    "rating": 4.9,
+    "on_etsy_since_years": 1.5,
+    "owner": "R3D Scott",
+    "owner_role": "Owner, Designer, Customer Service",
+    "owner_bio": "Thanks so much for visiting my page! I am an animator and 3D artist and love Beyblade, Trading card games and Video games! I hope to fill out my store with tons of products for all these my favorite hobbies",
+    "shop_tagline": "3D printed accessories for all your favorite hobbies",
+    "item_count": 26,
+    "currency": "CAD",
+    "shop_wide_discount": "15% off, sale ends in 6 days (as of scrape date)"
+  },
+  "listings": [
+    {
+      "listing_id": "4517603404",
+      "url": "https://www.etsy.com/ca/listing/4517603404/digital-keychain-veroni-standard-edition",
+      "title": "Digital Keychain Ver:ONI Standard Edition Marathon Inspired",
+      "category": "digital_keychain",
+      "fandom": "Marathon",
+      "list_price_cad": 69.99,
+      "sale_price_cad": 59.49,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "Charms",
+          "options": [
+            {"label": "No Charms", "price_cad": 59.49},
+            {"label": "(1) Key Card Charm", "price_cad": 65.44},
+            {"label": "(1) Bullet Charm", "price_cad": 65.44},
+            {"label": "(1) Rook Head Charm", "price_cad": 65.44},
+            {"label": "(2) Bullet & Rook", "price_cad": 70.54},
+            {"label": "(2) KeyCard & Bullet", "price_cad": 70.54},
+            {"label": "(2) Rook & KeyCard", "price_cad": 70.54},
+            {"label": "All (3) Charms!", "price_cad": 73.94}
+          ]
+        }
+      ],
+      "description": "Key Features:\n-Vibrant LED screen with pre-loaded animations (faction logos, arrows, and more)\n-Two customizable text frames for names or phrases\n-*new* Charms! Ill be adding more over time\nEnter your custom text at checkout and grab your Runner Tag today!",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 1, "rating": 5.0},
+      "listed_on": "24 Jul, 2026",
+      "favourites": 49,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/d6dd00/8188881831/il_fullxfull.8188881831_jdl9.jpg",
+        "https://i.etsystatic.com/53777731/r/il/a7720b/8140984056/il_fullxfull.8140984056_2hs8.jpg",
+        "https://i.etsystatic.com/53777731/r/il/00ab09/8141119208/il_fullxfull.8141119208_9izt.jpg"
+      ]
+    },
+    {
+      "listing_id": "4521380369",
+      "url": "https://www.etsy.com/ca/listing/4521380369/digital-keychain-verdur4nd4l-standard",
+      "title": "Digital Keychain Ver:DUR4ND4L Standard Edition Marathon Inspired",
+      "category": "digital_keychain",
+      "fandom": "Marathon",
+      "list_price_cad": 69.99,
+      "sale_price_cad": 59.49,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "Charms",
+          "options": [
+            {"label": "No Charms", "price_cad": 59.49},
+            {"label": "(1) Key Card Charm", "price_cad": 65.44},
+            {"label": "(1) Bullet Charm", "price_cad": 65.44},
+            {"label": "(1) Rook Head Charm", "price_cad": 65.44},
+            {"label": "(2) Bullet & Rook", "price_cad": 70.54},
+            {"label": "(2) KeyCard & Bullet", "price_cad": 70.54},
+            {"label": "(2) Rook & KeyCard", "price_cad": 70.54},
+            {"label": "All (3) Charms!", "price_cad": 73.94}
+          ]
+        }
+      ],
+      "description": "Key Features:\n-Vibrant LED screen with pre-loaded animations (faction logos, arrows, and more)\n-Two customizable text frames for names or phrases\n-*new* Charms! Ill be adding more over time\nEnter your custom text at checkout and grab your Runner Tag today!",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 2, "rating": 5.0},
+      "listed_on": "23 Sept, 2026",
+      "favourites": 238,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/c85d0d/8188886161/il_fullxfull.8188886161_mci9.jpg",
+        "https://i.etsystatic.com/53777731/r/il/cd20fc/8188888413/il_fullxfull.8188888413_5qhi.jpg",
+        "https://i.etsystatic.com/53777731/r/il/ca6614/8189016831/il_fullxfull.8189016831_kpw4.jpg"
+      ]
+    },
+    {
+      "listing_id": "4521380881",
+      "url": "https://www.etsy.com/ca/listing/4521380881/digital-keychain-vergantry-standard",
+      "title": "Digital Keychain Ver:_GANTRY Standard Edition Marathon Inspired",
+      "category": "digital_keychain",
+      "fandom": "Marathon",
+      "list_price_cad": 69.99,
+      "sale_price_cad": 59.49,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "Charms",
+          "options": [
+            {"label": "No Charms", "price_cad": 59.49},
+            {"label": "(1) Key Card Charm", "price_cad": 65.44},
+            {"label": "(1) Bullet Charm", "price_cad": 65.44},
+            {"label": "(1) Rook Head Charm", "price_cad": 65.44},
+            {"label": "(2) Bullet & Rook", "price_cad": 70.54},
+            {"label": "(2) KeyCard & Bullet", "price_cad": 70.54},
+            {"label": "(2) Rook & KeyCard", "price_cad": 70.54},
+            {"label": "All (3) Charms!", "price_cad": 73.94}
+          ]
+        }
+      ],
+      "description": "Key Features:\n-Vibrant LED screen with pre-loaded animations (faction logos, arrows, and more)\n-Two customizable text frames for names or phrases\n-*new* Charms! Ill be adding more over time\nEnter your custom text at checkout and grab your Runner Tag today!",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 2, "rating": 5.0},
+      "listed_on": "03 Aug, 2026",
+      "favourites": 60,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/0eeb10/8140975712/il_fullxfull.8140975712_8a35.jpg",
+        "https://i.etsystatic.com/53777731/r/il/b95262/8140979396/il_fullxfull.8140979396_te98.jpg",
+        "https://i.etsystatic.com/53777731/r/il/86053d/8141119650/il_fullxfull.8141119650_2ain.jpg"
+      ]
+    },
+    {
+      "listing_id": "4521381185",
+      "url": "https://www.etsy.com/ca/listing/4521381185/digital-keychain-vercharter-standard",
+      "title": "Digital Keychain Ver:CHARTER Standard Edition Marathon Inspired",
+      "category": "digital_keychain",
+      "fandom": "Marathon",
+      "list_price_cad": 69.99,
+      "sale_price_cad": 59.49,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "Charms",
+          "options": [
+            {"label": "No Charms", "price_cad": 59.49},
+            {"label": "(1) Key Card Charm", "price_cad": 65.44},
+            {"label": "(1) Bullet Charm", "price_cad": 65.44},
+            {"label": "(1) Rook Head Charm", "price_cad": 65.44},
+            {"label": "(2) Bullet & Rook", "price_cad": 70.54},
+            {"label": "(2) KeyCard & Bullet", "price_cad": 70.54},
+            {"label": "(2) Rook & KeyCard", "price_cad": 70.54},
+            {"label": "All (3) Charms!", "price_cad": 73.94}
+          ]
+        }
+      ],
+      "description": "Key Features:\n-Vibrant LED screen with pre-loaded animations (faction logos, arrows, and more)\n-Two customizable text frames for names or phrases\n-*new* Charms! Ill be adding more over time\nEnter your custom text at checkout and grab your Runner Tag today!",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 2, "rating": 5.0},
+      "listed_on": "14 Aug, 2026",
+      "favourites": 94,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/3ec55a/8188884829/il_fullxfull.8188884829_1nkd.jpg",
+        "https://i.etsystatic.com/53777731/r/il/6c30d7/8140985182/il_fullxfull.8140985182_5uxt.jpg",
+        "https://i.etsystatic.com/53777731/r/il/ff4238/8189016361/il_fullxfull.8189016361_si0b.jpg"
+      ]
+    },
+    {
+      "listing_id": "4521389608",
+      "url": "https://www.etsy.com/ca/listing/4521389608/digital-keychain-ver-cyro-contraband",
+      "title": "Digital Keychain Ver: CRYO Contraband edition Marathon Inspired",
+      "category": "digital_keychain",
+      "fandom": "Marathon",
+      "list_price_cad": 97.99,
+      "sale_price_cad": 83.29,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "Charms",
+          "options": [
+            {"label": "No Additional Charms", "price_cad": 83.29},
+            {"label": "(1) Key Card Charm", "price_cad": 89.24},
+            {"label": "(1) Bullet Charm", "price_cad": 89.24},
+            {"label": "(1) Rook Head Charm", "price_cad": 89.24},
+            {"label": "(2) Bullet & Rook", "price_cad": 94.34},
+            {"label": "(2) KeyCard & Bullet", "price_cad": 94.34},
+            {"label": "(2) Rook & KeyCard", "price_cad": 94.34},
+            {"label": "All (3) Charms!", "price_cad": 97.74}
+          ]
+        }
+      ],
+      "description": "[Contraband] edition runner tag\n-Comes with the amazingly detailed unit and an exclusive charm [Compiler Ganglion Charm]\n-Vibrant LED screen with pre-loaded animations (faction logos, arrows, and more)\n-Two customizable text frames for names or phrases\n-*new* Charms! Ill be adding more over time\nEnter your custom text at checkout and grab your Runner Tag today!",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 6, "rating": 5.0},
+      "listed_on": "17 Sept, 2026",
+      "favourites": 89,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/8ba374/8140981486/il_fullxfull.8140981486_m178.jpg",
+        "https://i.etsystatic.com/53777731/r/il/b4fab3/8140981006/il_fullxfull.8140981006_i6uk.jpg",
+        "https://i.etsystatic.com/53777731/r/il/97b4f2/8189014969/il_fullxfull.8189014969_apr8.jpg"
+      ]
+    },
+    {
+      "listing_id": "4521401550",
+      "url": "https://www.etsy.com/ca/listing/4521401550/digital-keychain-vernona-standard",
+      "title": "Digital Keychain Ver:NONA Standard Edition Marathon Inspired",
+      "category": "digital_keychain",
+      "fandom": "Marathon",
+      "list_price_cad": 69.99,
+      "sale_price_cad": 59.49,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "Charms",
+          "options": [
+            {"label": "No Charms", "price_cad": 59.49},
+            {"label": "(1) Key Card Charm", "price_cad": 65.44},
+            {"label": "(1) Bullet Charm", "price_cad": 65.44},
+            {"label": "(1) Rook Head Charm", "price_cad": 65.44},
+            {"label": "(2) Bullet & Rook", "price_cad": 70.54},
+            {"label": "(2) KeyCard & Bullet", "price_cad": 70.54},
+            {"label": "(2) Rook & KeyCard", "price_cad": 70.54},
+            {"label": "All (3) Charms!", "price_cad": 73.94}
+          ]
+        }
+      ],
+      "description": "Key Features:\n-Vibrant LED screen with pre-loaded animations (faction logos, arrows, and more)\n-Two customizable text frames for names or phrases\n-*new* Charms! Ill be adding more over time\nEnter your custom text at checkout and grab your Runner Tag today!",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 5, "rating": 5.0},
+      "listed_on": "06 Aug, 2026",
+      "favourites": 64,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/c30663/8188862913/il_fullxfull.8188862913_ryjk.jpg",
+        "https://i.etsystatic.com/53777731/r/il/2f3321/8188878663/il_fullxfull.8188878663_he62.jpg",
+        "https://i.etsystatic.com/53777731/r/il/eb5824/8189015475/il_fullxfull.8189015475_7szg.jpg"
+      ]
+    },
+    {
+      "listing_id": "4521394301",
+      "url": "https://www.etsy.com/ca/listing/4521394301/digital-keychain-vergaius-standard",
+      "title": "Digital Keychain Ver:GAIUS Standard Edition Marathon Inspired",
+      "category": "digital_keychain",
+      "fandom": "Marathon",
+      "list_price_cad": 69.99,
+      "sale_price_cad": 59.49,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "Charms",
+          "options": [
+            {"label": "No Charms", "price_cad": 59.49},
+            {"label": "(1) Key Card Charm", "price_cad": 65.44},
+            {"label": "(1) Bullet Charm", "price_cad": 65.44},
+            {"label": "(1) Rook Head Charm", "price_cad": 65.44},
+            {"label": "(2) Bullet & Rook", "price_cad": 70.54},
+            {"label": "(2) KeyCard & Bullet", "price_cad": 70.54},
+            {"label": "(2) Rook & KeyCard", "price_cad": 70.54},
+            {"label": "All (3) Charms!", "price_cad": 73.94}
+          ]
+        }
+      ],
+      "description": "Key Features:\n-Vibrant LED screen with pre-loaded animations (faction logos, arrows, and more)\n-Two customizable text frames for names or phrases\n-*new* Charms! Ill be adding more over time\nEnter your custom text at checkout and grab your Runner Tag today!",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 1, "rating": 5.0},
+      "listed_on": "04 Aug, 2026",
+      "favourites": 44,
+      "stock_note": "Low in stock, only 9 left",
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/a62c93/8140969992/il_fullxfull.8140969992_q0qr.jpg",
+        "https://i.etsystatic.com/53777731/r/il/89bf2d/8140978938/il_fullxfull.8140978938_h84x.jpg",
+        "https://i.etsystatic.com/53777731/r/il/f25564/8189019227/il_fullxfull.8189019227_bpru.jpg"
+      ]
+    },
+    {
+      "listing_id": "4521399826",
+      "url": "https://www.etsy.com/ca/listing/4521399826/digital-keychain-vervulcan-standard",
+      "title": "Digital Keychain Ver:VULCAN Standard Edition Marathon Inspired",
+      "category": "digital_keychain",
+      "fandom": "Marathon",
+      "list_price_cad": 69.99,
+      "sale_price_cad": 59.49,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "Charms",
+          "options": [
+            {"label": "No Charms", "price_cad": 59.49},
+            {"label": "(1) Key Card Charm", "price_cad": 65.44},
+            {"label": "(1) Bullet Charm", "price_cad": 65.44},
+            {"label": "(1) Rook Head Charm", "price_cad": 65.44},
+            {"label": "(2) Bullet & Rook", "price_cad": 70.54},
+            {"label": "(2) KeyCard & Bullet", "price_cad": 70.54},
+            {"label": "(2) Rook & KeyCard", "price_cad": 70.54},
+            {"label": "All (3) Charms!", "price_cad": 73.94}
+          ]
+        }
+      ],
+      "description": "Key Features:\n-Vibrant LED screen with pre-loaded animations (faction logos, arrows, and more)\n-Two customizable text frames for names or phrases\n-*new* Charms! Ill be adding more over time\nEnter your custom text at checkout and grab your Runner Tag today!",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 1, "rating": 5.0},
+      "listed_on": "04 Sept, 2026",
+      "favourites": 66,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/baaffb/8140903208/il_fullxfull.8140903208_douw.jpg",
+        "https://i.etsystatic.com/53777731/r/il/f82242/8141121716/il_fullxfull.8141121716_8wuu.jpg",
+        "https://i.etsystatic.com/53777731/r/il/578783/8189019773/il_fullxfull.8189019773_duwa.jpg"
+      ]
+    },
+    {
+      "listing_id": "4522558748",
+      "url": "https://www.etsy.com/ca/listing/4522558748/protector-phone-charm-marathon-inspired",
+      "title": "Protector Phone Charm Marathon Inspired",
+      "category": "small_goods",
+      "fandom": "Marathon",
+      "list_price_cad": 10.99,
+      "sale_price_cad": 9.34,
+      "digital_download": false,
+      "personalization_offered": false,
+      "materials": "Pla",
+      "variations": [],
+      "description": "Shield phone charm with lanyard",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 2, "rating": 4.5},
+      "listed_on": "23 Sept, 2026",
+      "favourites": 70,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/63499e/8189055345/il_fullxfull.8189055345_h8sx.jpg",
+        "https://i.etsystatic.com/53777731/r/il/f34b99/8141156636/il_fullxfull.8141156636_p1gt.jpg"
+      ]
+    },
+    {
+      "listing_id": "4504677145",
+      "url": "https://www.etsy.com/ca/listing/4504677145/x-sync-dual-launcher-link-beyblade-x",
+      "title": "X-SYNC Dual Launcher Link | Beyblade X Accessory | String Launcher Connector",
+      "category": "tool_display",
+      "fandom": "Beyblade X",
+      "list_price_cad": 19.99,
+      "sale_price_cad": 16.99,
+      "digital_download": false,
+      "personalization_offered": false,
+      "materials": null,
+      "variations": [
+        {
+          "name": "Primary colour",
+          "options": [
+            {"label": "Black"}, {"label": "White"}, {"label": "Blue"}, {"label": "Orange"},
+            {"label": "Pink"}, {"label": "Yellow"}, {"label": "Red"}, {"label": "Purple"}, {"label": "Green"}
+          ]
+        },
+        {
+          "name": "Secondary colour",
+          "options": [
+            {"label": "Black"}, {"label": "White"}, {"label": "Blue"}, {"label": "Orange"},
+            {"label": "Purple"}, {"label": "Red"}, {"label": "Yellow"}, {"label": "Green"}, {"label": "Pink"}
+          ]
+        }
+      ],
+      "description": "X-SYNC\nThis tool links together two string launchers so that you can fire two beys simultaneously!\n*** THIS ITEM ONLY INCLUDES THE LAUNCHER LINK AND GRIP DUAL SLIPGRIP ***\n***THIS ITEM DOES NOT INCLUDE A STRING LAUNCHER OR OFFICAL-GRIP***",
+      "dimensions_or_compatibility": "Only includes the launcher link and grip dual slipgrip; does not include a string launcher or official grip.",
+      "reviews": {"count": 0, "rating": null},
+      "listed_on": "16 Aug, 2026",
+      "favourites": 33,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/71981e/8019579870/il_fullxfull.8019579870_fw64.jpg",
+        "https://i.etsystatic.com/53777731/r/il/01ed69/8065435253/il_fullxfull.8065435253_a25r.jpg",
+        "https://i.etsystatic.com/53777731/r/il/8e56b4/8065436195/il_fullxfull.8065436195_420l.jpg",
+        "https://i.etsystatic.com/53777731/r/il/42d886/8017570810/il_fullxfull.8017570810_453h.jpg",
+        "https://i.etsystatic.com/53777731/r/il/6a958a/8065489055/il_fullxfull.8065489055_7ptf.jpg"
+      ]
+    },
+    {
+      "listing_id": "4384298467",
+      "url": "https://www.etsy.com/ca/listing/4384298467/artisan-edition-x-grip-for-beyblade-x",
+      "title": "Artisan Edition: X-Grip for Beyblade X",
+      "category": "grip",
+      "fandom": "Beyblade X",
+      "list_price_cad": 69.99,
+      "sale_price_cad": 59.49,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "Right or Left handed",
+          "options": [
+            {"label": "Right (Standard)"},
+            {"label": "Left"}
+          ]
+        }
+      ],
+      "description": "Meet the L3D Challenger Box\nElevate your tournament setup with the L3D Challenger Box, the ultimate customizable Beyblade case designed for 3-on-3 battles. Featuring a programmable LED screen with tons of animated styles and two custom text options of your choice, it lets you flaunt your unique style while keeping your Beyblades secure.\nWith plenty of space for even the tallest combos, launchers, and accessories, this durable case is perfect for on-the-go storage or display. ELEVATE THE GAME—personalize yours at checkout and grab it today!",
+      "description_note": "Listing description text on the live page appears to be copy-pasted from the L3D Challenger Box listing rather than describing this grip; recorded verbatim as it appears on Etsy.",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 6, "rating": 5.0},
+      "listed_on": "08 Jul, 2026",
+      "favourites": 125,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/b37e29/7271964758/il_fullxfull.7271964758_9j1x.jpg",
+        "https://i.etsystatic.com/53777731/r/il/d5cd7b/7271890112/il_fullxfull.7271890112_jbgc.jpg",
+        "https://i.etsystatic.com/53777731/r/il/5dc7a2/7319837041/il_fullxfull.7319837041_r3t4.jpg",
+        "https://i.etsystatic.com/53777731/r/il/705534/7271890048/il_fullxfull.7271890048_ar32.jpg",
+        "https://i.etsystatic.com/53777731/r/il/831004/7319836979/il_fullxfull.7319836979_tr83.jpg"
+      ]
+    },
+    {
+      "listing_id": "4384169799",
+      "url": "https://www.etsy.com/ca/listing/4384169799/l3d-challenger-box-for-beyblade-x",
+      "title": "L3D Challenger Box for Beyblade X",
+      "category": "deck_case",
+      "fandom": "Beyblade X",
+      "list_price_cad": 74.99,
+      "sale_price_cad": 63.74,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "Colour Variation",
+          "options": [
+            {"label": "Black and Gold"},
+            {"label": "White and Silver"}
+          ]
+        },
+        {
+          "name": "LED Colour",
+          "options": [
+            {"label": "Blue"}, {"label": "Green"}, {"label": "Red"}, {"label": "White"}
+          ]
+        }
+      ],
+      "description": "Meet the L3D Challenger Box\nElevate your tournament setup with the L3D Challenger Box, the ultimate customizable Beyblade case designed for 3-on-3 battles. Featuring a programmable LED screen with tons of animated styles and two custom text options of your choice, it lets you flaunt your unique style while keeping your Beyblades secure.\nWith plenty of space for even the tallest combos, launchers, and accessories, this durable case is perfect for on-the-go storage or display. ELEVATE THE GAME—personalize yours at checkout and grab it today!",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 5, "rating": 5.0},
+      "listed_on": "14 Aug, 2026",
+      "favourites": 131,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/f5ded8/7319191393/il_fullxfull.7319191393_msed.jpg",
+        "https://i.etsystatic.com/53777731/r/il/9f800c/7319111863/il_fullxfull.7319111863_n9ql.jpg",
+        "https://i.etsystatic.com/53777731/r/il/4e05ef/7271165628/il_fullxfull.7271165628_sbds.jpg"
+      ]
+    },
+    {
+      "listing_id": "4384168521",
+      "url": "https://www.etsy.com/ca/listing/4384168521/challenger-box-for-beyblade-x",
+      "title": "Challenger Box for Beyblade X",
+      "category": "deck_case",
+      "fandom": "Beyblade X",
+      "list_price_cad": 39.99,
+      "sale_price_cad": 33.99,
+      "digital_download": false,
+      "personalization_offered": false,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "Colour Variation",
+          "options": [
+            {"label": "Black and Gold"},
+            {"label": "White and Silver"}
+          ]
+        }
+      ],
+      "description": "Meet the Challenger Box\nA new way to carry your 3 on 3 deck, This Deck case has been designed with plenty of space for even the tallest combos!\nELEVATE THE GAME – grab yours today!",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 6, "rating": 5.0},
+      "listed_on": "21 Aug, 2026",
+      "favourites": 78,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/284f87/7271196428/il_fullxfull.7271196428_sorg.jpg",
+        "https://i.etsystatic.com/53777731/r/il/1534f4/7271165634/il_fullxfull.7271165634_eoa4.jpg",
+        "https://i.etsystatic.com/53777731/r/il/fba844/7319111887/il_fullxfull.7319111887_2fef.jpg",
+        "https://i.etsystatic.com/53777731/r/il/4e05ef/7271165628/il_fullxfull.7271165628_sbds.jpg",
+        "https://i.etsystatic.com/53777731/r/il/5b4b6e/7319111881/il_fullxfull.7319111881_reri.jpg",
+        "https://i.etsystatic.com/53777731/r/il/9f800c/7319111863/il_fullxfull.7319111863_n9ql.jpg",
+        "https://i.etsystatic.com/53777731/r/il/36b20f/7319111893/il_fullxfull.7319111893_ik66.jpg",
+        "https://i.etsystatic.com/53777731/r/il/0bef97/7319111885/il_fullxfull.7319111885_4dl4.jpg"
+      ]
+    },
+    {
+      "listing_id": "4384234508",
+      "url": "https://www.etsy.com/ca/listing/4384234508/x-display-for-beyblade-x",
+      "title": "X-Display for Beyblade X",
+      "category": "tool_display",
+      "fandom": "Beyblade X",
+      "list_price_cad": 44.99,
+      "sale_price_cad": 38.24,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "LED Colour",
+          "options": [
+            {"label": "Blue"}, {"label": "Green"}, {"label": "Red"}, {"label": "White"}
+          ]
+        }
+      ],
+      "description": "X-Display - Customizable LED Launcher Accessory\n\nElevate your Beyblade X battles with the X-Display, a sleek LED accessory designed to mount seamlessly on top of your winder or string launcher. Featuring a vibrant 11x48 pixel LED screen loaded with dynamic pre-installed animations like flames, arrows, and more, this add-on brings electrifying style to your tournaments.\n\nMake it your own with two customizable text frames—add your name, a battle motto, or any phrase you choose. Built for Beyblade X enthusiasts, this durable accessory combines bold flair with reliable performance, ensuring your launcher shines in every spin.\n\nKey Features:\n-Vibrant LED screen with pre-loaded animations (flames, arrows, and more)\n-Two customizable text frames for names or phrases\n-Easy-to-mount design for Beyblade X winder or string launcher\n-Durable construction for tournament-ready performance\n\nReady to light up the arena? Enter your custom text at checkout and grab your X-Display today!",
+      "dimensions_or_compatibility": "11x48 pixel LED screen; mounts on top of winder or string launcher",
+      "reviews": {"count": 20, "rating": 5.0},
+      "listed_on": "19 Aug, 2026",
+      "favourites": 368,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/6166ca/7271602424/il_fullxfull.7271602424_6rtv.jpg",
+        "https://i.etsystatic.com/53777731/r/il/911d13/7319545959/il_fullxfull.7319545959_qbth.jpg",
+        "https://i.etsystatic.com/53777731/r/il/6ce5bf/7271600760/il_fullxfull.7271600760_8s6j.jpg",
+        "https://i.etsystatic.com/53777731/r/il/e159e5/7271600656/il_fullxfull.7271600656_kp30.jpg",
+        "https://i.etsystatic.com/53777731/r/il/824b13/7271600686/il_fullxfull.7271600686_h3fz.jpg"
+      ]
+    },
+    {
+      "listing_id": "4384237192",
+      "url": "https://www.etsy.com/ca/listing/4384237192/ratchet-balancing-tool-for-beybladex",
+      "title": "Ratchet Balancing Tool for BeybladeX",
+      "category": "tool_display",
+      "fandom": "Beyblade X",
+      "list_price_cad": 19.99,
+      "sale_price_cad": 16.99,
+      "digital_download": false,
+      "personalization_offered": false,
+      "materials": "PLA",
+      "variations": [],
+      "description": "Ratchet Balancing Tool - Optimize Your Beyblade X Combos\n\nMaximize your Beyblade X performance with the Ratchet Balancing Tool, designed to fine-tune both stamina and aggressive combos. This precision tool allows you to optimize stamina setups for longer spins or create a larger offset for harder-hitting aggressive combos, giving you the edge in any battle.\nThrough extensive testing, we've found this tool excels in stamina matchups, often making the critical difference in spin-out scenarios. Crafted for Beyblade X enthusiasts, it’s a must-have for players looking to elevate their game with precision and strategy.\nKey Features:\n\n-Optimizes stamina combos for extended spin times\n-Enhances aggressive combos with larger offset for harder hits\n-Proven effective in stamina matchups through rigorous testing\n-Durable and easy-to-use design for all skill levels\n\nReady to dominate the arena? Add the Ratchet Balancing Tool to your collection today!",
+      "dimensions_or_compatibility": null,
+      "reviews": {"count": 44, "rating": 4.6},
+      "listed_on": "25 Sept, 2026",
+      "favourites": 344,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/88b1dd/7319553527/il_fullxfull.7319553527_f4gj.jpg",
+        "https://i.etsystatic.com/53777731/r/il/143236/7271607540/il_fullxfull.7271607540_exfo.jpg",
+        "https://i.etsystatic.com/53777731/r/il/0f8ad7/7319552647/il_fullxfull.7319552647_nulf.jpg",
+        "https://i.etsystatic.com/53777731/r/il/9cd401/7319552635/il_fullxfull.7319552635_1xhv.jpg"
+      ]
+    },
+    {
+      "listing_id": "4384258609",
+      "url": "https://www.etsy.com/ca/listing/4384258609/x-grip-for-beyblade-x",
+      "title": "X-Grip for Beyblade X",
+      "category": "grip",
+      "fandom": "Beyblade X",
+      "list_price_cad": 34.99,
+      "sale_price_cad": 29.74,
+      "digital_download": false,
+      "personalization_offered": false,
+      "materials": "Pla",
+      "variations": [
+        {
+          "name": "Accent Colour",
+          "options": [
+            {"label": "Blue"}, {"label": "Green"}
+          ]
+        },
+        {
+          "name": "Left or Right handed grip",
+          "options": [
+            {"label": "Standard (Right)"}, {"label": "Left"}
+          ]
+        }
+      ],
+      "description": "X-Grip\nergonomic grip for the winder launcher. come in two colours Green and Blue and has a left or right handed",
+      "dimensions_or_compatibility": "For the winder launcher",
+      "reviews": {"count": 14, "rating": 4.9},
+      "listed_on": "19 Aug, 2026",
+      "favourites": 103,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/af14d5/7319640459/il_fullxfull.7319640459_8v2l.jpg",
+        "https://i.etsystatic.com/53777731/r/il/7ef6dc/7271670746/il_fullxfull.7271670746_d66n.jpg",
+        "https://i.etsystatic.com/53777731/r/il/7d338b/7271670752/il_fullxfull.7271670752_jnw8.jpg"
+      ]
+    },
+    {
+      "listing_id": "4384265677",
+      "url": "https://www.etsy.com/ca/listing/4384265677/slim-grip-for-beyblade-x",
+      "title": "Slim-Grip for Beyblade X",
+      "category": "grip",
+      "fandom": "Beyblade X",
+      "list_price_cad": 22.99,
+      "sale_price_cad": 19.54,
+      "digital_download": false,
+      "personalization_offered": false,
+      "materials": "Pla",
+      "variations": [],
+      "description": "Slim Grip - Universal Launcher Handle for Beyblade X\nBoost your Beyblade X launches with the Slim Grip, a universal handle that fits both winder and string launchers. Its low-profile, lightweight design offers slim comfort and control without bulk—ideal for battles and precise spins.\nPerfect for enthusiasts, this ergonomic and durable grip upgrades your setup for smoother performance in tournaments or at home.\nKey Features:\n\nUniversal fit for winder or string launchers\nLow-profile, lightweight, and slim for easy handling\nErgonomic comfort and control\nDurable build for lasting use\n\nLevel up your launches—add the Slim Grip today!",
+      "dimensions_or_compatibility": "Universal fit for winder or string launchers",
+      "reviews": {"count": 9, "rating": 5.0},
+      "listed_on": "20 Aug, 2026",
+      "favourites": 182,
+      "stock_note": "Low in stock, only 9 left",
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/454820/7271733452/il_fullxfull.7271733452_5sh6.jpg",
+        "https://i.etsystatic.com/53777731/r/il/647d6d/7271725286/il_fullxfull.7271725286_843s.jpg",
+        "https://i.etsystatic.com/53777731/r/il/7821d0/7271725290/il_fullxfull.7271725290_alkq.jpg",
+        "https://i.etsystatic.com/53777731/r/il/e70fef/7271725292/il_fullxfull.7271725292_lbph.jpg"
+      ]
+    },
+    {
+      "listing_id": "4384292923",
+      "url": "https://www.etsy.com/ca/listing/4384292923/digital-download-x-grip-for-beyblade-x",
+      "title": "Digital Download X-Grip for Beyblade X",
+      "category": "digital_file",
+      "fandom": "Beyblade X",
+      "list_price_cad": 19.99,
+      "sale_price_cad": 16.99,
+      "digital_download": true,
+      "digital_file_type": "1 ZIP",
+      "personalization_offered": false,
+      "materials": null,
+      "variations": [],
+      "description": "This file is provided for non-commercial, personal use only and is not to be redistributed\n\nThis Zip Includes:\n-Bambulab Optomized printing file(s)\n>A1/P1S/X1C/H2D\nThis file also includes:\n-Text Printing Instructions\n-Standard Grip & Left Handed Grip\n>Bot Body.obj\n>Bot Body Accents.obj\n>Top Body.obj\n>Top Body Accents.obj\n>Grip.obj\n>Peg.STL\n>Lock.obj\nThe file Does require Glue to assemble: (any crazy glue will work)\nMy recommendation:\nInstantBond (Adhesive) -This Adhesive comes with a setting agent, I prefer to let the glue dry on its own so you can slide the part into position and let it set for about 15minutes.",
+      "dimensions_or_compatibility": "Bambu Lab optimized print files, compatible with A1/P1S/X1C/H2D printers; includes Standard Grip and Left Handed Grip STL/OBJ files; requires glue to assemble (non-commercial, personal use only, not for redistribution)",
+      "reviews": {"count": 2, "rating": 5.0},
+      "listed_on": "27 Jul, 2026",
+      "favourites": 40,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/884315/7319702823/il_fullxfull.7319702823_gchs.jpg",
+        "https://i.etsystatic.com/53777731/r/il/710f65/7271741268/il_fullxfull.7271741268_8n9z.jpg",
+        "https://i.etsystatic.com/53777731/r/il/a61de1/7319701987/il_fullxfull.7319701987_649h.jpg",
+        "https://i.etsystatic.com/53777731/r/il/54095d/7271756160/il_fullxfull.7271756160_gkru.jpg"
+      ]
+    },
+    {
+      "listing_id": "4384244334",
+      "url": "https://www.etsy.com/ca/listing/4384244334/bitlab01-non-competitive-custom-bits-for",
+      "title": "BITLAB///01 non-competitive custom Bits for BeybladeX",
+      "category": "small_goods",
+      "fandom": "Beyblade X",
+      "list_price_cad": 15.99,
+      "sale_price_cad": 13.59,
+      "digital_download": false,
+      "personalization_offered": false,
+      "materials": "Pla",
+      "variations": [],
+      "description": "///BITLAB -01\nDrill Driver = Tower over the competition with this insanely tall bit\nLow Level = This low bit excels at X-dashing and is extremely aggressive\nFaceted Lift = A different take on the Elevate bit, think Elevate but with needle\nTri Rush = an aggressive bit with an unpredictable movement pattern\n\nThese bits are manufactured with dual printing. PETG stems and PLA tips( The tips are specifically designed to be significantly softer then the arena as to not damage it during use)",
+      "dimensions_or_compatibility": "Dual-printed: PETG stems, PLA tips (softer than the arena to avoid damaging it)",
+      "reviews": {"count": 5, "rating": 5.0},
+      "listed_on": "27 Jul, 2026",
+      "favourites": 124,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/944c6b/7319604929/il_fullxfull.7319604929_qhvv.jpg",
+        "https://i.etsystatic.com/53777731/r/il/ef8ece/7319569967/il_fullxfull.7319569967_jt8x.jpg",
+        "https://i.etsystatic.com/53777731/r/il/742ad3/7319569965/il_fullxfull.7319569965_88o0.jpg"
+      ]
+    },
+    {
+      "listing_id": "4384145765",
+      "url": "https://www.etsy.com/ca/listing/4384145765/excalibur-strike-grip-compatible-with",
+      "title": "Excalibur Strike Grip [Compatible with the Hold Launcher Ripcord] for BeybladeX",
+      "category": "grip",
+      "fandom": "Beyblade X",
+      "list_price_cad": 24.99,
+      "sale_price_cad": 21.24,
+      "digital_download": false,
+      "personalization_offered": false,
+      "materials": "PLA",
+      "variations": [],
+      "description": "A tough, Excalibur-style handle made just for the Hold Launcher Ripcord. Easy to assemble with 3 parts. Built to last through every battle!",
+      "dimensions_or_compatibility": "Compatible with the Hold Launcher Ripcord; assembles from 3 parts",
+      "reviews": {"count": 5, "rating": 5.0},
+      "listed_on": "19 Aug, 2026",
+      "favourites": 159,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/299751/7319496335/il_fullxfull.7319496335_l1j8.jpg",
+        "https://i.etsystatic.com/53777731/r/il/de0d70/7319001287/il_fullxfull.7319001287_8zmy.jpg",
+        "https://i.etsystatic.com/53777731/r/il/567329/7271055848/il_fullxfull.7271055848_789h.jpg"
+      ]
+    },
+    {
+      "listing_id": "1880714065",
+      "url": "https://www.etsy.com/ca/listing/1880714065/samurai-strike-grip-compatible-with-the",
+      "title": "Samurai Strike Grip [Compatible with the Hold Launcher Ripcord] for BeybladeX",
+      "category": "grip",
+      "fandom": "Beyblade X",
+      "list_price_cad": 24.99,
+      "sale_price_cad": 21.24,
+      "digital_download": false,
+      "personalization_offered": false,
+      "materials": "PLA",
+      "variations": [],
+      "description": "A tough, katana-style handle made just for the Hold Launcher Ripcord. Easy to assemble with 3 parts. Built to last through every battle!",
+      "dimensions_or_compatibility": "Compatible with the Hold Launcher Ripcord; assembles from 3 parts",
+      "reviews": {"count": 56, "rating": 4.8},
+      "listed_on": "19 Aug, 2026",
+      "favourites": 611,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/d7f808/6677346518/il_fullxfull.6677346518_r8hr.jpg",
+        "https://i.etsystatic.com/53777731/r/il/ed2a33/6725387643/il_fullxfull.6725387643_o7hz.jpg",
+        "https://i.etsystatic.com/53777731/r/il/0e1c64/6725387625/il_fullxfull.6725387625_izn9.jpg"
+      ]
+    },
+    {
+      "listing_id": "1879894035",
+      "url": "https://www.etsy.com/ca/listing/1879894035/armoryx-3on3-deck-case-for-beybladex",
+      "title": "ArmoryX 3on3 Deck case for BeybladeX",
+      "category": "deck_case",
+      "fandom": "Beyblade X",
+      "list_price_cad": 59.99,
+      "sale_price_cad": 50.99,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "PLA, Magnets, Nylon",
+      "variations": [
+        {
+          "name": "Personalized Side panel(s)",
+          "options": [
+            {"label": "No personalization", "price_cad": 50.99},
+            {"label": "One Side", "price_cad": 59.49},
+            {"label": "Both Sides", "price_cad": 63.74}
+          ]
+        }
+      ],
+      "description": "Meet the Armory X – the ultimate deck case designed for Bey enthusiasts! Engineered for convenience, style, and strategy, this case takes your battling experience to the next level.\nFeatures:\n\nWrist Lanyard: Carry your deck effortlessly wherever the battle takes you.\n\nPeek-Proof Lid: Hide your picks in style! The clever lid doubles as a shield to keep your opponent guessing.\n\nSecure Design: Equipped with a locking lid and a sleek magnetic clasp for peace of mind.\n\nSpacious Fit: From your shortest setup to your tallest combo, the Armory X accommodates all official Bey combinations with room to spare.\n\nWhether you're a casual player or a seasoned blader, the Armory X is your perfect companion for organizing, protecting, and showcasing your Bey collection. ELEVATE THE GAME – grab yours today!",
+      "dimensions_or_compatibility": "Accommodates all official Bey combinations, from shortest setup to tallest combo; wrist lanyard, peek-proof lid, magnetic clasp",
+      "reviews": {"count": 24, "rating": 4.9},
+      "listed_on": "31 Jul, 2026",
+      "favourites": 425,
+      "stock_note": "Low in stock, only 9 left",
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/fa9e71/6773137644/il_fullxfull.6773137644_mz8x.jpg",
+        "https://i.etsystatic.com/53777731/r/il/2bc158/6996357629/il_fullxfull.6996357629_fr7d.jpg",
+        "https://i.etsystatic.com/53777731/r/il/0c9440/6673021596/il_fullxfull.6673021596_lofd.jpg",
+        "https://i.etsystatic.com/53777731/r/il/26bf90/6721065941/il_fullxfull.6721065941_6i51.jpg",
+        "https://i.etsystatic.com/53777731/r/il/e16b58/6673021594/il_fullxfull.6673021594_ozuw.jpg",
+        "https://i.etsystatic.com/53777731/r/il/79c5ff/6673021612/il_fullxfull.6673021612_pron.jpg"
+      ]
+    },
+    {
+      "listing_id": "1880663283",
+      "url": "https://www.etsy.com/ca/listing/1880663283/elevate-display-stand-3-pack-compatible",
+      "title": "Elevate Display Stand [3 pack] Compatible with BeybladeX",
+      "category": "tool_display",
+      "fandom": "Beyblade X",
+      "list_price_cad": 14.99,
+      "sale_price_cad": 12.74,
+      "digital_download": false,
+      "personalization_offered": false,
+      "materials": "Pla",
+      "variations": [],
+      "description": "Elevate Display Stand [3 pack]\n\nDescription\nElevate your X series Tops with the Elevate Display Stand! Designed for convenience and style, this stand enhances your viewing and gaming experience.\n\nFeatures:\n2-Colour Design: Choose from two stylish colors to match your setup.\nX Series Compatible: Fits all X series parts perfectly.",
+      "dimensions_or_compatibility": "Fits all X series parts; sold as a 3-pack; 2-colour design",
+      "reviews": {"count": 4, "rating": 5.0},
+      "listed_on": "25 Jul, 2026",
+      "favourites": 106,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/92826c/6677044948/il_fullxfull.6677044948_n0dw.jpg",
+        "https://i.etsystatic.com/53777731/r/il/0dacba/6725086393/il_fullxfull.6725086393_65xi.jpg",
+        "https://i.etsystatic.com/53777731/r/il/109f98/6725086399/il_fullxfull.6725086399_79vw.jpg"
+      ]
+    },
+    {
+      "listing_id": "1880717965",
+      "url": "https://www.etsy.com/ca/listing/1880717965/foundersx-beybladex-deck-case-white-3on3",
+      "title": "FoundersX BeybladeX Deck Case: White, 3on3 Edition",
+      "category": "deck_case",
+      "fandom": "Beyblade X",
+      "list_price_cad": 79.99,
+      "sale_price_cad": 67.99,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "PLA, Magnets, Nylon",
+      "variations": [
+        {
+          "name": "Personalized Side panel(s)",
+          "options": [
+            {"label": "No personalization", "price_cad": 67.99},
+            {"label": "One Side", "price_cad": 73.09},
+            {"label": "Both Sides", "price_cad": 76.49}
+          ]
+        }
+      ],
+      "description": "FoundersX 3on3 Deck Case – Edition [White]\n\nDescription:\nIntroducing the FoundersX Deck Case – the ultimate deck case crafted to celebrate the launch of R3D! Engineered for convenience, style, and strategy, this case takes your battling experience to the next level. This case marks the epic kickoff of your new go-to accessory store for X-series spinning tops.\n\nExclusivity:\nThis box is a rare, limited-time treasure that won’t last long. Once it’s gone from the store, the Gold and Silver styles are retired forever. The Founders Edition Meteorite stays in the shop for five months, until September 2025, or until 300 units per style are sold—whichever comes first—then makes way for a new limited edition series. These future releases will bring fresh, game-inspired themes, swapping out every three months or after hitting 300 units sold.\n\nFeatures:\n\nExclusive Redesign: A completely refreshed exterior and interior, packed with unique details crafted to honor R3D’s grand opening.\n\nWrist Lanyard: Carry your deck effortlessly wherever the battle takes you.\n\nPeek-Proof Lid: Hide your picks in style! The clever lid doubles as a shield to keep your opponent guessing.\n\nSecure Design: Equipped with a locking lid and a sleek magnetic clasp for peace of mind.\n\nSpacious Fit: From your shortest setup to your tallest combo, the ArmoryX accommodates all official X-series spinning top combinations with room to spare.\n\nWhether you're a casual player or a seasoned veteran, the FoundersX Deck Case is your perfect companion for organizing, protecting, and showcasing your X-series spinning top collection. ELEVATE THE GAME – grab yours before it’s gone in September 2025!",
+      "description_note": "Description text references a September 2025 sunset date for this limited edition; site copy appears not to have been updated since (scrape date is Sept 2026). Recorded verbatim.",
+      "dimensions_or_compatibility": "Accommodates all official X-series spinning top combinations, from shortest setup to tallest combo",
+      "reviews": {"count": 18, "rating": 4.8},
+      "listed_on": "26 May, 2026",
+      "favourites": 140,
+      "stock_note": "Low in stock, only 9 left",
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/bcb396/6773138132/il_fullxfull.6773138132_k411.jpg",
+        "https://i.etsystatic.com/53777731/r/il/4d2b9d/6996366077/il_fullxfull.6996366077_7qya.jpg",
+        "https://i.etsystatic.com/53777731/r/il/01bb56/6725409123/il_fullxfull.6725409123_5ahy.jpg",
+        "https://i.etsystatic.com/53777731/r/il/0eb9c7/6725409137/il_fullxfull.6725409137_hnto.jpg",
+        "https://i.etsystatic.com/53777731/r/il/14b66d/6725409145/il_fullxfull.6725409145_a427.jpg",
+        "https://i.etsystatic.com/53777731/r/il/521ae5/6725409141/il_fullxfull.6725409141_q1pa.jpg"
+      ]
+    },
+    {
+      "listing_id": "1866530972",
+      "url": "https://www.etsy.com/ca/listing/1866530972/foundersx-3on3-deck-case-black-for",
+      "title": "FoundersX 3on3 Deck case [black] for BeybladeX",
+      "category": "deck_case",
+      "fandom": "Beyblade X",
+      "list_price_cad": 79.99,
+      "sale_price_cad": 67.99,
+      "digital_download": false,
+      "personalization_offered": true,
+      "materials": "PLA, Magnets, Nylon",
+      "variations": [
+        {
+          "name": "Personalized Side panel(s)",
+          "options": [
+            {"label": "No personalization", "price_cad": 67.99},
+            {"label": "One Side", "price_cad": 76.49},
+            {"label": "Both Sides", "price_cad": 80.74}
+          ]
+        }
+      ],
+      "description": "FoundersX 3on3 Deck Case – Edition [black]\n\nDescription:\nIntroducing the FoundersX Deck Case – the ultimate deck case crafted to celebrate the launch of R3D! Engineered for convenience, style, and strategy, this case takes your battling experience to the next level. This case marks the epic kickoff of your new go-to accessory store for X-series spinning tops.\n\nExclusivity:\nThis box is a rare, limited-time treasure that won’t last long. Once it’s gone from the store, the Gold and Silver styles are retired forever. The Founders Edition Meteorite stays in the shop for five months, until September 2025, or until 300 units per style are sold—whichever comes first—then makes way for a new limited edition series. These future releases will bring fresh, game-inspired themes, swapping out every three months or after hitting 300 units sold.\n\nFeatures:\n\nExclusive Redesign: A completely refreshed exterior and interior, packed with unique details crafted to honor R3D’s grand opening.\n\nWrist Lanyard: Carry your deck effortlessly wherever the battle takes you.\n\nPeek-Proof Lid: Hide your picks in style! The clever lid doubles as a shield to keep your opponent guessing.\n\nSecure Design: Equipped with a locking lid and a sleek magnetic clasp for peace of mind.\n\nSpacious Fit: From your shortest setup to your tallest combo, the ArmoryX accommodates all official X-series spinning top combinations with room to spare.\n\nWhether you're a casual player or a seasoned veteran, the FoundersX Deck Case is your perfect companion for organizing, protecting, and showcasing your X-series spinning top collection. ELEVATE THE GAME – grab yours before it’s gone in September 2025!",
+      "description_note": "Description text references a September 2025 sunset date for this limited edition; site copy appears not to have been updated since (scrape date is Sept 2026). Recorded verbatim.",
+      "dimensions_or_compatibility": "Accommodates all official X-series spinning top combinations, from shortest setup to tallest combo",
+      "reviews": {"count": 18, "rating": 5.0},
+      "listed_on": "24 Sept, 2026",
+      "favourites": 229,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/54b68a/6821150735/il_fullxfull.6821150735_n3gc.jpg",
+        "https://i.etsystatic.com/53777731/r/il/92a7ee/6948396810/il_fullxfull.6948396810_hzz0.jpg",
+        "https://i.etsystatic.com/53777731/r/il/dfc823/6677375690/il_fullxfull.6677375690_sjjd.jpg",
+        "https://i.etsystatic.com/53777731/r/il/f3e8e0/6725416523/il_fullxfull.6725416523_7baj.jpg",
+        "https://i.etsystatic.com/53777731/r/il/693b7d/6725416517/il_fullxfull.6725416517_7iyi.jpg",
+        "https://i.etsystatic.com/53777731/r/il/581ba0/6677375698/il_fullxfull.6677375698_jd8l.jpg"
+      ]
+    },
+    {
+      "listing_id": "1880712597",
+      "url": "https://www.etsy.com/ca/listing/1880712597/samurai-strike-grip-compatible-with-the",
+      "title": "Samurai Strike Grip [Compatible with the Winder Launcher Ripcord] for BeybladeX",
+      "category": "grip",
+      "fandom": "Beyblade X",
+      "list_price_cad": 24.99,
+      "sale_price_cad": 21.24,
+      "digital_download": false,
+      "personalization_offered": false,
+      "materials": "PLA",
+      "variations": [],
+      "description": "A tough, katana-style handle made just for the Winder Launcher Ripcord. Easy to assemble with 3 parts. Built to last through every battle!",
+      "dimensions_or_compatibility": "Compatible with the Winder Launcher Ripcord; assembles from 3 parts",
+      "reviews": {"count": 3, "rating": 5.0},
+      "listed_on": "18 Aug, 2026",
+      "favourites": 129,
+      "images": [
+        "https://i.etsystatic.com/53777731/r/il/5beb34/6725375537/il_fullxfull.6725375537_act9.jpg",
+        "https://i.etsystatic.com/53777731/r/il/f3c12c/6677334728/il_fullxfull.6677334728_30vc.jpg",
+        "https://i.etsystatic.com/53777731/r/il/0bfb95/6677334730/il_fullxfull.6677334730_blb4.jpg"
+      ]
+    }
+  ]
+}
