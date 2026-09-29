@@ -32,6 +32,30 @@ Live: https://glorptraag.github.io/r3dge/
 - Studio and process photography for The Lab.
 - Original product photos and renders to self-host instead of Etsy's CDN.
 
+## Swapping content (built for hi-fi media later)
+
+Nothing visual is hard-coded to today's photos. Edit data, rebuild, push.
+
+- **Home, drop and ticker copy**: `data/site.json`. The hero sign, drop sign and footer
+  ticker are lists of LED messages (`{ "text" }` or `{ "preset" }` plus an effect).
+- **Any product or variant media**: add a `media` list in `data/catalog.json`. Each slot is
+  an image URL, a video loop or a 3D model; the gallery, product cards, runner tiles and
+  home doors all render whichever it is:
+
+  ```json
+  "media": [
+    { "type": "video", "src": "media/cryo-turntable.mp4", "poster": "media/cryo.webp" },
+    { "type": "model", "src": "media/foundersx.glb", "ios": "media/foundersx.usdz", "poster": "media/foundersx.webp" },
+    "media/cryo-front.webp"
+  ]
+  ```
+
+  Videos autoplay muted and looped (paused with controls under reduced motion). 3D models
+  load Google's `<model-viewer>` only on pages that have one, with drag-to-rotate and AR
+  on phones. Files placed in `src/media/` are published at `media/`.
+- **LED presets** (arrow, spinner, equalizer and so on) live in `src/assets/led-data.js`,
+  exported from LED Badge Studio's library.
+
 ## Develop
 
 No dependencies. Node 20+.

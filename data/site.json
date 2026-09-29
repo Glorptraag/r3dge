@@ -1,0 +1,43 @@
+{
+  "_help": "Home page and drop content. LED messages take { text } or { preset } (arrow, equalizer, spinner, bounce, invader, heartbeat) plus an optional effect: left, laser, piling, flash, freeze, animation. Media slots take an image URL, or { type: video|model, src, poster }.",
+  "hero": {
+    "sign": [
+      { "text": "///DROP-02 INCOMING" },
+      { "preset": "arrow", "effect": "left" },
+      { "text": "ELEVATE THE GAME" },
+      { "preset": "spinner", "loops": 3 }
+    ],
+    "headline": "Game gear, modelled and printed in Toronto.",
+    "lede": "Deck cases, grips and tuning tools for Beyblade X. Wearable LED Runner Tags for Marathon fans. Every piece designed by R3D Scott, animator and 3D artist.",
+    "primary": { "label": "Shop the gear", "href": "shop/" },
+    "secondary": { "label": "Get DROP-02 alerts", "href": "#drop" },
+    "doors": [
+      { "line": "beyblade-x", "label": "Beyblade X", "media": { "product": "l3d-challenger-box", "index": 0 } },
+      { "line": "marathon", "label": "Marathon", "media": { "product": "runner-tag", "variant": "charter", "index": 0 } }
+    ]
+  },
+  "drop": {
+    "number": "DROP-02",
+    "status": "Teasing",
+    "line": "Incoming. No date yet, no lineup leaks.",
+    "copy": "R3D releases in numbered drops, and the first ones sell through. Leave an address and the signal reaches you before the listings do.",
+    "sign": [
+      { "text": "///DROP-02" },
+      { "preset": "spinner", "loops": 3 },
+      { "text": "INCOMING", "effect": "laser" },
+      { "text": "NO DATE YET", "effect": "piling" }
+    ]
+  },
+  "archive": [
+    {
+      "number": "DROP-01",
+      "name": "FoundersX",
+      "product": "foundersx-deck-case",
+      "copy": "The launch edition deck case that opened R3D: wrist lanyard, peek-proof lid, magnetic clasp. Capped at 300 units per style, in black and white."
+    }
+  ],
+  "ticker": [
+    { "text": "ELEVATE THE GAME ///" },
+    { "text": "DESIGNED + PRINTED IN TORONTO ///" }
+  ]
+}

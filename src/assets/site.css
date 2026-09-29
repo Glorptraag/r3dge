@@ -133,7 +133,7 @@ canvas.led { display: block; width: 100%; background: var(--pit); }
   min-width: 28px;
   padding: 2px 5px;
   background: var(--pit);
-  color: var(--ghost);
+  color: var(--muted);
   font: 900 1rem/1.2 var(--display);
   text-align: center;
 }
@@ -214,7 +214,7 @@ canvas.led { display: block; width: 100%; background: var(--pit); }
 .field input:hover, .waitlist input:hover { border-color: var(--muted); }
 .field input:focus, .waitlist input:focus { outline: none; border-color: var(--red); box-shadow: 0 0 0 1px var(--red); }
 [data-c-text], [data-text] { font: 700 1.35rem var(--display); letter-spacing: 0.02em; }
-input::placeholder { color: #7d706a; }
+input::placeholder { color: #978a83; }
 .hint { color: var(--muted); font-size: 0.85rem; }
 fieldset { margin: 0; padding: 0; border: 0; min-width: 0; }
 legend { padding: 0; margin-bottom: 10px; }
@@ -519,7 +519,7 @@ legend { padding: 0; margin-bottom: 10px; }
 .compat thead th { font: 600 0.85rem var(--ui); text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
 .compat tbody th { font: 700 1.05rem var(--ui); text-transform: uppercase; letter-spacing: 0.04em; }
 .fit { font: 900 1.05rem var(--display); color: var(--red); }
-.nofit { color: #7d706a; }
+.nofit { color: #978a83; }
 .faq { border-top: 1px solid var(--line); max-width: 860px; }
 .faq details { border-bottom: 1px solid var(--line); }
 .faq summary {
@@ -534,8 +534,15 @@ legend { padding: 0; margin-bottom: 10px; }
   list-style: none;
 }
 .faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: '+'; font: 900 1.4rem/1 var(--display); color: var(--red); }
-.faq details[open] summary::after { content: '−'; }
+.faq summary::after {
+  content: '';
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  background: linear-gradient(var(--red), var(--red)) center / 16px 2px no-repeat, linear-gradient(var(--red), var(--red)) center / 2px 16px no-repeat;
+}
+.faq details[open] summary::after { background-size: 16px 2px, 0 0; }
 .faq summary:hover { color: var(--red); }
 .faq details p { padding: 0 0 22px; color: var(--muted); max-width: 66ch; }
 
@@ -656,3 +663,8 @@ legend { padding: 0; margin-bottom: 10px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 0ms !important; }
 }
+
+/* media slots: image, video loop or 3D model share one frame */
+.gallery-slot, .gallery-slot > * { width: 100%; height: 100%; }
+.card-media video, .door video, .runner-media video, .gallery-slot video { display: block; width: 100%; height: 100%; object-fit: cover; }
+model-viewer { display: block; width: 100%; height: 100%; background: var(--panel); --poster-color: var(--panel); }

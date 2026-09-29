@@ -1,6 +1,7 @@
 // Storefront behaviour: cart (localStorage), product options, shop filters,
 // the LED text composer and the demo waitlist. Everything degrades to plain links.
 import { mountPanel } from './led.js'
+import { mediaHtml, thumbSrc, normalize } from './media.js'
 
 const $ = (s, r = document) => r.querySelector(s)
 const $$ = (s, r = document) => [...r.querySelectorAll(s)]
@@ -142,6 +143,20 @@ document.addEventListener('keydown', (e) => {
 addEventListener('storage', (e) => { if (e.key === CART) { cart = store.get(CART, []); renderCart() } })
 renderCart()
 
+// ---------------------------------------------------------------- media
+
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)')
+let modelViewer
+function enhanceMedia(root = document) {
+  if (!modelViewer && $('model-viewer', root)) {
+    modelViewer = import('https://cdn.jsdelivr.net/npm/@google/model-viewer@4/dist/model-viewer.min.js').catch(() => {})
+  }
+  $$('video[autoplay]', root).forEach((v) => {
+    if (reduceMotion.matches) { v.removeAttribute('autoplay'); v.pause(); v.controls = true }
+  })
+}
+enhanceMedia()
+
 // ---------------------------------------------------------------- product
 
 const productEl = $('[data-product]')
@@ -181,12 +196,20 @@ if (productEl) {
     return null
   }
 
-  function setGallery(imgs) {
-    const main = $('[data-gallery-main]', productEl)
-    const thumbs = $('[data-thumbs]', productEl)
-    const big = (u) => u.replaceAll('il_fullxfull', 'il_794xN')
-    main.src = big(imgs[0])
-    thumbs.innerHTML = imgs.map((u, i) => `<button type="button" class="thumb" aria-label="Photo ${i + 1}" aria-pressed="${i === 0}" data-src="${big(u)}"><img src="${u.replaceAll('il_fullxfull', 'il_340x270')}" alt="" width="340" height="270"></button>`).join('')
+  const vmedia = (v) => (v?.media ?? v?.images ?? null)?.map(normalize) ?? null
+  let gallery = vmedia(variant()) ?? data.media
+
+  function showMedia(i) {
+    $('[data-gallery-main]', productEl).innerHTML = mediaHtml(gallery[i], { alt: data.name, eager: true })
+    $$('.thumb', productEl).forEach((t) => t.setAttribute('aria-pressed', String(+t.dataset.i === i)))
+    enhanceMedia(productEl)
+  }
+
+  function setGallery(list) {
+    gallery = list
+    const kind = (m) => (m.type === 'video' ? 'Video' : m.type === 'model' ? '3D view' : 'Photo')
+    $('[data-thumbs]', productEl).innerHTML = list.map((m, i) => `<button type="button" class="thumb" aria-label="${kind(m)} ${i + 1}" aria-pressed="${i === 0}" data-i="${i}"><img src="${thumbSrc(m)}" alt="" width="340" height="270"></button>`).join('')
+    showMedia(0)
   }
 
   function sync(fromVariant) {
@@ -211,7 +234,7 @@ if (productEl) {
     $('[data-etsy]', form).href = etsy
     const stock = $('[data-stock]', form)
     if (variant()) stock.hidden = !variant().low
-    if (fromVariant && variant()?.images) setGallery(variant().images)
+    if (fromVariant && vmedia(variant())) setGallery(vmedia(variant()))
     const g = glow()
     if (g && screen) {
       screen.style.setProperty('--led', g)
@@ -248,8 +271,7 @@ if (productEl) {
   $('[data-thumbs]', productEl).addEventListener('click', (e) => {
     const b = e.target.closest('.thumb')
     if (!b) return
-    $('[data-gallery-main]', productEl).src = b.dataset.src
-    $$('.thumb', productEl).forEach((t) => t.setAttribute('aria-pressed', String(t === b)))
+    showMedia(+b.dataset.i)
   })
 
   form.addEventListener('submit', (e) => {
@@ -262,9 +284,8 @@ if (productEl) {
     const existing = cart.find((l) => l.key === key)
     if (existing) existing.qty = Math.min(9, existing.qty + qty)
     else {
-      const imgs = variant()?.images ?? data.images
       const textLabels = visibleTexts.map((t) => t.labels[0]?.textContent ?? '')
-      cart.push({ key, handle: data.handle, name: data.name, textLabels, img: imgs[0].replaceAll('il_fullxfull', 'il_340x270'), opts, text, qty, unit: unit(), etsy: variant()?.etsy ?? data.etsy })
+      cart.push({ key, handle: data.handle, name: data.name, textLabels, img: thumbSrc(gallery[0]), opts, text, qty, unit: unit(), etsy: variant()?.etsy ?? data.etsy })
     }
     saveCart()
     const btn = $('button[type=submit]', form)

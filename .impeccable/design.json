@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T11:12:18.186Z",
+  "title": "Design System: R3D Game Essentials",
+  "extensions": {
+    "colorMeta": {
+      "void": {
+        "role": "neutral",
+        "displayName": "Void",
+        "canonical": "oklch(14.2% 0.004 17.6)",
+        "tonalRamp": [
+          "oklch(15% 0.002 17.6)",
+          "oklch(25% 0.002 17.6)",
+          "oklch(35% 0.004 17.6)",
+          "oklch(48% 0.004 17.6)",
+          "oklch(60% 0.004 17.6)",
+          "oklch(72% 0.004 17.6)",
+          "oklch(84% 0.004 17.6)",
+          "oklch(95% 0.002 17.6)"
+        ]
+      },
+      "pit": {
+        "role": "neutral",
+        "displayName": "Pit",
+        "canonical": "oklch(11.7% 0.003 17.5)",
+        "tonalRamp": [
+          "oklch(15% 0.002 17.5)",
+          "oklch(25% 0.002 17.5)",
+          "oklch(35% 0.003 17.5)",
+          "oklch(48% 0.003 17.5)",
+          "oklch(60% 0.003 17.5)",
+          "oklch(72% 0.003 17.5)",
+          "oklch(84% 0.003 17.5)",
+          "oklch(95% 0.002 17.5)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel",
+        "canonical": "oklch(17.8% 0.007 0.9)",
+        "tonalRamp": [
+          "oklch(15% 0.004 0.9)",
+          "oklch(25% 0.004 0.9)",
+          "oklch(35% 0.007 0.9)",
+          "oklch(48% 0.007 0.9)",
+          "oklch(60% 0.007 0.9)",
+          "oklch(72% 0.007 0.9)",
+          "oklch(84% 0.007 0.9)",
+          "oklch(95% 0.004 0.9)"
+        ]
+      },
+      "panel-2": {
+        "role": "neutral",
+        "displayName": "Panel 2",
+        "canonical": "oklch(20.3% 0.010 6.7)",
+        "tonalRamp": [
+          "oklch(15% 0.005 6.7)",
+          "oklch(25% 0.005 6.7)",
+          "oklch(35% 0.010 6.7)",
+          "oklch(48% 0.010 6.7)",
+          "oklch(60% 0.010 6.7)",
+          "oklch(72% 0.010 6.7)",
+          "oklch(84% 0.010 6.7)",
+          "oklch(95% 0.005 6.7)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "canonical": "oklch(26.4% 0.015 11.4)",
+        "tonalRamp": [
+          "oklch(15% 0.007 11.4)",
+          "oklch(25% 0.007 11.4)",
+          "oklch(35% 0.015 11.4)",
+          "oklch(48% 0.015 11.4)",
+          "oklch(60% 0.015 11.4)",
+          "oklch(72% 0.015 11.4)",
+          "oklch(84% 0.015 11.4)",
+          "oklch(95% 0.007 11.4)"
+        ]
+      },
+      "line-2": {
+        "role": "neutral",
+        "displayName": "Line 2",
+        "canonical": "oklch(33.7% 0.020 13.4)",
+        "tonalRamp": [
+          "oklch(15% 0.010 13.4)",
+          "oklch(25% 0.010 13.4)",
+          "oklch(35% 0.020 13.4)",
+          "oklch(48% 0.020 13.4)",
+          "oklch(60% 0.020 13.4)",
+          "oklch(72% 0.020 13.4)",
+          "oklch(84% 0.020 13.4)",
+          "oklch(95% 0.010 13.4)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(95.2% 0.009 62.6)",
+        "tonalRamp": [
+          "oklch(15% 0.004 62.6)",
+          "oklch(25% 0.004 62.6)",
+          "oklch(35% 0.009 62.6)",
+          "oklch(48% 0.009 62.6)",
+          "oklch(60% 0.009 62.6)",
+          "oklch(72% 0.009 62.6)",
+          "oklch(84% 0.009 62.6)",
+          "oklch(95% 0.004 62.6)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "canonical": "oklch(73.7% 0.017 52.5)",
+        "tonalRamp": [
+          "oklch(15% 0.009 52.5)",
+          "oklch(25% 0.009 52.5)",
+          "oklch(35% 0.017 52.5)",
+          "oklch(48% 0.017 52.5)",
+          "oklch(60% 0.017 52.5)",
+          "oklch(72% 0.017 52.5)",
+          "oklch(84% 0.017 52.5)",
+          "oklch(95% 0.009 52.5)"
+        ]
+      },
+      "led-red": {
+        "role": "primary",
+        "displayName": "LED Red",
+        "canonical": "oklch(64.2% 0.244 29.2)",
+        "tonalRamp": [
+          "oklch(15% 0.122 29.2)",
+          "oklch(25% 0.122 29.2)",
+          "oklch(35% 0.244 29.2)",
+          "oklch(48% 0.244 29.2)",
+          "oklch(60% 0.244 29.2)",
+          "oklch(72% 0.244 29.2)",
+          "oklch(84% 0.244 29.2)",
+          "oklch(95% 0.122 29.2)"
+        ],
+        "cssVar": "--red"
+      },
+      "led-orange": {
+        "role": "secondary",
+        "displayName": "LED Orange",
+        "canonical": "oklch(72.4% 0.187 48.9)",
+        "tonalRamp": [
+          "oklch(15% 0.093 48.9)",
+          "oklch(25% 0.093 48.9)",
+          "oklch(35% 0.187 48.9)",
+          "oklch(48% 0.187 48.9)",
+          "oklch(60% 0.187 48.9)",
+          "oklch(72% 0.187 48.9)",
+          "oklch(84% 0.187 48.9)",
+          "oklch(95% 0.093 48.9)"
+        ],
+        "cssVar": "--orange"
+      },
+      "ghost": {
+        "role": "neutral",
+        "displayName": "Ghost",
+        "canonical": "oklch(23.0% 0.031 26.3)",
+        "tonalRamp": [
+          "oklch(15% 0.015 26.3)",
+          "oklch(25% 0.015 26.3)",
+          "oklch(35% 0.031 26.3)",
+          "oklch(48% 0.031 26.3)",
+          "oklch(60% 0.031 26.3)",
+          "oklch(72% 0.031 26.3)",
+          "oklch(84% 0.031 26.3)",
+          "oklch(95% 0.015 26.3)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Home h1 and section h2s, sentence case with trailing full stop."
+      },
+      "display-page": {
+        "displayName": "Display Page",
+        "purpose": "Single h1 on Shop and Lab index pages."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "h2 section heads."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Every price, count, corner tag and quantity; red when it carries value."
+      },
+      "price-hero": {
+        "displayName": "Price Hero",
+        "purpose": "Product-page price and cart subtotal."
+      },
+      "tag-input": {
+        "displayName": "Tag Input",
+        "purpose": "Fields whose text is shown on the LED screen."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "h3, card/tile names, FAQ questions, cart lines."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Buttons, text links, subtotal."
+      },
+      "nav": {
+        "displayName": "Nav",
+        "purpose": "Header navigation."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, legends, spec terms, crumbs, currency; muted."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy, 46-66ch."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Muted intro paragraph, max 54ch."
+      }
+    },
+    "shadows": [
+      {
+        "name": "device-glow",
+        "value": "0 40px 90px -30px color-mix(in srgb, var(--led) 45%, transparent), inset 0 1px 0 #3a2f30",
+        "purpose": "Light cast under the Runner Tag replica."
+      },
+      {
+        "name": "screen-glow",
+        "value": "0 30px 60px -34px color-mix(in srgb, var(--led) 55%, transparent)",
+        "purpose": "Light cast under the product-page LED screen."
+      },
+      {
+        "name": "dot-halo",
+        "value": "0 0 6px 1px color-mix(in srgb, var(--led) 70%, transparent)",
+        "purpose": "Single 9px indicator LEDs (glow chips); feature bullets use 0 0 8px 1px."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "The only easing; for objects that travel."
+      },
+      {
+        "name": "drawer",
+        "value": "260ms",
+        "purpose": "Cart drawer slide."
+      },
+      {
+        "name": "scrim",
+        "value": "220ms",
+        "purpose": "Drawer scrim fade."
+      },
+      {
+        "name": "toast",
+        "value": "200ms opacity / 300ms translate",
+        "purpose": "Toast rise; holds 2.6s."
+      },
+      {
+        "name": "photo-zoom",
+        "value": "600ms scale(1.04)",
+        "purpose": "Hobby door photo on hover."
+      },
+      {
+        "name": "control-state",
+        "value": "0ms",
+        "purpose": "Hover, selection and colour changes on controls are instant swaps."
+      },
+      {
+        "name": "led-scroll",
+        "value": "55ms/tick",
+        "purpose": "LED scroll-left speed; freeze/flash 45ms ticks, 40-tick hold."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transitions 0ms; LED resting frame",
+        "purpose": "Respect prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "rails-2up",
+        "value": "1080px"
+      },
+      {
+        "name": "single-column",
+        "value": "860px"
+      },
+      {
+        "name": "phone",
+        "value": "520px"
+      }
+    ],
+    "ledMatrix": {
+      "rows": 11,
+      "productCols": 44,
+      "dotRadius": "0.36 pitch (canvas) / 0.38 (SVG)",
+      "ghostBed": "mix(rgb(13,10,10), glow, 0.13) on canvas; --ghost on SVG; background --pit",
+      "litCore": "glow mixed 35% toward white",
+      "halo": "radial: 55% alpha at 0.2 pitch, 16% at 0.45, 0 at 1 pitch",
+      "font": "ASC11 badge font, glyphs trimmed, 1-col gap, 3-col space",
+      "effects": [
+        "left",
+        "freeze",
+        "flash",
+        "laser",
+        "piling",
+        "animation presets: arrow, spinner, equalizer, bounce"
+      ],
+      "inverted": "on red: lit = --void, ghost = rgba(0,0,0,0.12), 12px halftone"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action; red fill, instant swap to orange on hover.",
+      "html": "<button class=\"ds-btn-primary\">Add to cart</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border:1px solid transparent;border-radius:2px;background:var(--red, #ff2a1f);color:var(--void, #0b0909);font:700 1rem 'Barlow Semi Condensed', 'Arial Narrow', sans-serif;text-transform:uppercase;letter-spacing:.1em;cursor:pointer}.ds-btn-primary:hover{background:var(--orange, #ff7a1a)}.ds-btn-primary:focus-visible{outline:2px solid var(--orange, #ff7a1a);outline-offset:3px}.ds-btn-primary:active{background:var(--ink, #f4eee9)}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action; bordered, turns red on hover.",
+      "html": "<button class=\"ds-btn-ghost\">Get DROP-02 alerts</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;min-height:50px;padding:0 24px;border:1px solid var(--line-2, #413334);border-radius:2px;background:transparent;color:var(--ink, #f4eee9);font:700 1rem 'Barlow Semi Condensed', 'Arial Narrow', sans-serif;text-transform:uppercase;letter-spacing:.1em;cursor:pointer}.ds-btn-ghost:hover{border-color:var(--red, #ff2a1f);color:var(--red, #ff2a1f)}.ds-btn-ghost:focus-visible{outline:2px solid var(--orange, #ff7a1a);outline-offset:3px}"
+    },
+    {
+      "name": "Tag Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Pit well; text typed in Doto because it will show on the LED.",
+      "html": "<label class=\"ds-field\"><span>Frame one</span><input value=\"RUNNER\"></label>",
+      "css": ".ds-field{display:grid;gap:6px}.ds-field span{font:600 .82rem 'Barlow Semi Condensed', 'Arial Narrow', sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--muted, #b3a7a0)}.ds-field input{min-height:50px;padding:0 14px;background:var(--pit, #060505);border:1px solid var(--line-2, #413334);border-radius:2px;color:var(--ink, #f4eee9);font:700 1.35rem 'Doto', 'Courier New', monospace;letter-spacing:.02em}.ds-field input:hover{border-color:var(--muted, #b3a7a0)}.ds-field input:focus{outline:none;border-color:var(--red, #ff2a1f);box-shadow:0 0 0 1px var(--red, #ff2a1f)}"
+    },
+    {
+      "name": "Header Nav",
+      "kind": "nav",
+      "description": "Condensed caps; current/hover goes red with a dotted LED underline.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Shop</a><a href=\"#\">Drops</a><a href=\"#\">The Lab</a></nav>",
+      "css": ".ds-nav{display:flex;gap:28px;background:var(--void, #0b0909);padding:0 16px;height:64px;align-items:center;border-bottom:1px solid var(--line, #2c2223)}.ds-nav a{font:600 1rem 'Barlow Semi Condensed', 'Arial Narrow', sans-serif;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;padding:8px 0;color:var(--ink, #f4eee9)}.ds-nav a:hover,.ds-nav a[aria-current=page]{color:var(--red, #ff2a1f);background:radial-gradient(circle,currentColor 1.4px,transparent 1.9px) 0 100%/6px 6px repeat-x}.ds-nav a:focus-visible{outline:2px solid var(--orange, #ff7a1a);outline-offset:3px}"
+    },
+    {
+      "name": "Glow Chip",
+      "kind": "chip",
+      "refersTo": "chip-selected",
+      "description": "Option chip with a lit indicator dot in the variant glow; fills with the glow when selected.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\" style=\"--led:#46e27a\"><input type=\"radio\" name=\"r\"><span>Oni</span></label><label class=\"ds-chip\" style=\"--led:#ff2a1f\"><input type=\"radio\" name=\"r\" checked><span>Gaius</span></label></div>",
+      "css": ".ds-chips{display:flex;gap:8px}.ds-chip{position:relative;cursor:pointer}.ds-chip input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}.ds-chip span{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 14px;border:1px solid var(--line-2, #413334);border-radius:2px;color:var(--ink, #f4eee9);font:600 .95rem 'Barlow Semi Condensed', 'Arial Narrow', sans-serif;text-transform:uppercase;letter-spacing:.06em}.ds-chip span::before{content:\"\";width:9px;height:9px;border-radius:50%;background:var(--led);box-shadow:0 0 6px 1px color-mix(in srgb,var(--led) 70%,transparent)}.ds-chip:hover span{border-color:var(--muted, #b3a7a0)}.ds-chip input:checked+span{background:var(--led);border-color:var(--led);color:var(--void, #0b0909)}.ds-chip input:checked+span::before{background:var(--void, #0b0909);box-shadow:none}.ds-chip input:focus-visible+span{outline:2px solid var(--orange, #ff7a1a);outline-offset:2px}"
+    },
+    {
+      "name": "Product Card",
+      "kind": "card",
+      "refersTo": "card-media",
+      "description": "Square media on panel, Doto corner tag, red Doto price; 2px red inset outline on hover.",
+      "html": "<a class=\"ds-card\" href=\"#\"><span class=\"ds-card-media\"><span class=\"ds-tag\">6</span></span><span class=\"ds-card-name\">Samurai Strike Grip</span><span class=\"ds-card-sub\">Katana-style ripcord handle</span><span class=\"ds-price\">$21.24 <small>CAD</small></span></a>",
+      "css": ".ds-card{display:grid;gap:4px;width:220px;text-decoration:none;color:var(--ink, #f4eee9)}.ds-card-media{position:relative;display:block;aspect-ratio:1;background:var(--panel, #141011);margin-bottom:10px}.ds-card:hover .ds-card-media,.ds-card:focus-visible .ds-card-media{outline:2px solid var(--red, #ff2a1f);outline-offset:-2px}.ds-card:focus-visible{outline:none}.ds-tag{position:absolute;top:10px;left:10px;padding:3px 8px;background:var(--void, #0b0909);color:var(--red, #ff2a1f);font:900 .95rem 'Doto', 'Courier New', monospace}.ds-card-name{font:700 1.15rem 'Barlow Semi Condensed', 'Arial Narrow', sans-serif;text-transform:uppercase;letter-spacing:.04em}.ds-card-sub{color:var(--muted, #b3a7a0);font-size:.95rem}.ds-price{margin-top:6px;font:900 1.3rem 'Doto', 'Courier New', monospace;color:var(--red, #ff2a1f)}.ds-price small{font:600 .75rem 'Barlow Semi Condensed', 'Arial Narrow', sans-serif;letter-spacing:.1em;color:var(--muted, #b3a7a0)}"
+    },
+    {
+      "name": "LED Screen",
+      "kind": "custom",
+      "refersTo": "led-screen",
+      "description": "11-row dot matrix: ghost bed always visible, lit dots with halo, glow via --led.",
+      "html": "<div class=\"ds-screen\" style=\"--led:#ff2a1f\"><div class=\"ds-matrix\"><i class=\"on\" style=\"grid-area:3/3/10/4\"></i><i class=\"on\" style=\"grid-area:3/4/4/7\"></i><i class=\"on\" style=\"grid-area:6/4/7/6\"></i><i class=\"on\" style=\"grid-area:3/9/10/10\"></i><i class=\"on\" style=\"grid-area:9/10/10/13\"></i></div></div>",
+      "css": ".ds-screen{display:inline-block;padding:12px;background:var(--pit, #060505);border:1px solid var(--line-2, #413334);border-radius:10px;box-shadow:0 30px 60px -34px color-mix(in srgb,var(--led) 55%,transparent)}.ds-matrix{display:grid;grid-template-columns:repeat(22,13px);grid-template-rows:repeat(11,13px);border-radius:4px;background:var(--pit, #060505) radial-gradient(circle,color-mix(in srgb,#0d0a0a 87%,var(--led)) 4.6px,transparent 5px) 0 0/13px 13px}.ds-matrix .on{background:radial-gradient(circle,color-mix(in srgb,var(--led) 65%,#fff) 4.6px,color-mix(in srgb,var(--led) 30%,transparent) 5.5px,transparent 13px) 0 0/13px 13px}"
+    },
+    {
+      "name": "DROP Band",
+      "kind": "custom",
+      "description": "Full-bleed red halftone band; LED lettering and controls invert to void.",
+      "html": "<section class=\"ds-drop\"><strong>///DROP-02</strong><button class=\"ds-drop-btn\">Get the signal</button></section>",
+      "css": ".ds-drop{display:flex;gap:24px;align-items:center;justify-content:space-between;padding:40px 24px;background:var(--red, #ff2a1f) radial-gradient(circle,rgba(0,0,0,.13) 2px,transparent 2.6px) 0 0/12px 12px;color:var(--void, #0b0909)}.ds-drop strong{font:900 2.2rem 'Doto', 'Courier New', monospace}.ds-drop-btn{min-height:50px;padding:0 24px;border:0;border-radius:2px;background:var(--void, #0b0909);color:var(--red, #ff2a1f);font:700 1rem 'Barlow Semi Condensed', 'Arial Narrow', sans-serif;text-transform:uppercase;letter-spacing:.1em;cursor:pointer}.ds-drop-btn:hover{color:var(--orange, #ff7a1a)}.ds-drop-btn:focus-visible{outline:2px solid var(--void, #0b0909);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Lit Sign",
+    "overview": "The storefront is R3D's own LED screen, scaled up. Every surface is a matte, near-black enclosure; anything that matters (a headline, a price, a count, a drop) is spoken in lit dots or in the dot-matrix face that imitates them. The ghost bed of unlit dots is always visible behind the lit ones, so the screen reads as hardware, not as a font effect. The same 11-row matrix drives the full-bleed hero sign, the Runner Tag previews and the badge-font lettering in the header, so product and site share one pixel model.\n\nControls are the instrument panel around the sign: condensed uppercase labels, near-square 2px corners, 1px rules, no decoration. Colour is scarce by design. Red and orange behave like light: they appear where something is lit, live or actionable, and the rest of the page stays in warm charcoal.\n\nDensity is shop-grade: four-up grids, tight 12px tile gaps, sticky filter bar, but generous section breathing (56–104px) between the \"worlds\" of Beyblade X and Marathon.",
+    "keyCharacteristics": [
+      "Near-black warm ground; red LED primary, orange LED secondary; everything else neutral.",
+      "11-row dot matrix as the signature surface, drawn by one shared pixel model (canvas live, SVG static).",
+      "Doto (dot-matrix) for headlines and every numeral; Barlow Semi Condensed caps for controls and labels; Barlow for reading.",
+      "Flat, rule-divided layout; the only shadows are light cast by LEDs.",
+      "State changes on controls are instant swaps; only physical objects (drawer, toast, photo) move."
+    ],
+    "rules": [
+      {
+        "name": "The Lit Signal Rule",
+        "body": "Red and orange mean *lit*: actionable, live, priced, counted or selected. Neutral content never goes red at rest; a screen with no lit elements is correct.",
+        "section": "colors"
+      },
+      {
+        "name": "The Scoped Glow Rule",
+        "body": "Any colour other than red/orange must arrive through `--led` on the element it belongs to; never hard-code a product glow into shared CSS.",
+        "section": "colors"
+      },
+      {
+        "name": "The Numbers Are Lit Rule",
+        "body": "Every numeral that carries value (price, count, quantity, stat) is Doto 900; prices and counts are red. Never set a price in Barlow.",
+        "section": "typography"
+      },
+      {
+        "name": "The Caps Are Controls Rule",
+        "body": "Uppercase tracked text is reserved for things you operate or scan (buttons, nav, labels, names). Headlines are never uppercase; reading copy is never uppercase.",
+        "section": "typography"
+      },
+      {
+        "name": "The Only Light Casts Shadow Rule",
+        "body": "A shadow must be light from a lit LED, tinted `--led`. No neutral drop shadows, no elevation on cards, buttons or panels.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Hardware Radius Rule",
+        "body": "Radius above 2px means \"this is a physical object\"; never round a UI control to look like one.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do put every headline, price, count and stat in Doto 900, with value numerals in LED Red.",
+      "Do draw LED lettering with the shared pixel model (11 rows, ghost bed always visible, badge font); use SVG for static marks and canvas for anything that moves.",
+      "Do tint glows, indicator dots and screen light through the scoped `--led` variable.",
+      "Do keep controls near-square (2px), uppercase condensed and tracked, with 1px borders.",
+      "Do keep hover and selection as instant swaps; reserve easing for things that physically travel.",
+      "Do use a 2px orange outline for focus everywhere (void on red surfaces).",
+      "Do give every animated panel a meaningful resting frame for reduced motion and no-JS."
+    ],
+    "donts": [
+      "Don't set type in red or orange unless it is lit (actionable, priced, counted, selected, live).",
+      "Don't add neutral drop shadows or lift cards on hover; depth is tone and 1px rules, and only LED light casts shadow.",
+      "Don't round controls, cards or media beyond 2px; larger radii belong to hardware replicas only.",
+      "Don't hide the ghost bed or render lit dots without their unlit neighbours; bare glowing text is not this world.",
+      "Don't uppercase headlines or body copy.",
+      "Don't hard-code runner glow colours into shared styles."
+    ]
+  }
+}

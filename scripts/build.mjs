@@ -4,26 +4,36 @@ import { readFile, writeFile, mkdir, cp, rm } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { textBitmap, ROWS } from '../src/assets/led-core.js'
+import { mediaHtml, posterSrc, thumbSrc, normalize } from '../src/assets/media.js'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const DIST = join(ROOT, 'dist')
 const BASE = process.env.BASE ?? '/r3dge/'
 const cat = JSON.parse(await readFile(join(ROOT, 'data/catalog.json'), 'utf8'))
 const { shop, products } = cat
+const site = JSON.parse(await readFile(join(ROOT, 'data/site.json'), 'utf8'))
 const byHandle = Object.fromEntries(products.map((p) => [p.handle, p]))
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c])
 const attr = (o) => esc(JSON.stringify(o))
 const money = (n) => `$${n.toFixed(2)}`
-const img = (url, size = 'il_570xN') => url.replaceAll('il_fullxfull', size)
 const variantOpt = (p) => p.options?.find((o) => o.kind === 'variant')
-const images = (p) => p.images ?? variantOpt(p).values[0].images
+const vmedia = (v) => (v.media ?? v.images ?? []).map(normalize)
+const media = (p) => (p.media || p.images ? vmedia(p) : vmedia(variantOpt(p).values[0]))
+/** A media reference in site.json: a direct slot, or { product, variant?, index? } pointing into the catalogue. */
+function resolveMedia(ref) {
+  if (typeof ref === 'string' || ref.type) return normalize(ref)
+  const p = byHandle[ref.product]
+  const v = ref.variant ? variantOpt(p).values.find((x) => x.key === ref.variant) : null
+  return (v ? vmedia(v) : media(p))[ref.index ?? 0]
+}
 const basePrice = (p) => p.price ?? Math.min(...variantOpt(p).values.map((v) => v.price))
 const hasRange = (p) => {
   const v = variantOpt(p)
   return (v && new Set(v.values.map((x) => x.price)).size > 1) || p.options?.some((o) => o.kind === 'add')
 }
 const reviewLine = (r) => (r ? `${r.rating.toFixed(1)} / 5 · ${r.count} Etsy review${r.count === 1 ? '' : 's'}` : 'New on Etsy')
+const link = (u, href) => (/^(#|https?:)/.test(href) ? href : u(href))
 const LINES = { 'beyblade-x': 'Beyblade X', marathon: 'Marathon' }
 const TYPES = { case: 'Deck cases', grip: 'Grips', tool: 'Tools & bits', display: 'Displays', keychain: 'Runner Tags', charm: 'Charms', digital: 'Print files' }
 
@@ -104,7 +114,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 ${body(u)}
 </main>
 <footer class="site-foot">
-  <canvas class="led foot-led" data-led="${attr({ messages: [{ text: 'ELEVATE THE GAME ///' }, { text: 'DESIGNED + PRINTED IN TORONTO ///' }] })}" aria-label="Elevate the game"></canvas>
+  <canvas class="led foot-led" data-led="${attr({ messages: site.ticker })}" aria-label="${esc(site.ticker[0].text)}"></canvas>
   <div class="foot-grid">
     <div><h2 class="foot-h">Shop</h2><a href="${u('shop/beyblade-x/')}">Beyblade X</a><a href="${u('shop/marathon/')}">Marathon Runner Tags</a><a href="${u('shop/')}">Everything</a><a href="${u('products/x-grip-print-files/')}">Print files</a></div>
     <div><h2 class="foot-h">Studio</h2><a href="${u('drops/')}">Drops</a><a href="${u('lab/')}">The Lab</a><a href="${u('support/')}">Shipping &amp; FAQ</a></div>
@@ -131,9 +141,10 @@ function priceTag(p) {
 }
 
 function card(p, u, { eager = false } = {}) {
-  const [a, b] = images(p)
+  const [a, b] = media(p)
+  const lead = a.type === 'model' ? { type: 'image', src: a.poster } : a
   return `<a class="card" href="${u(`products/${p.handle}/`)}" data-line="${p.line}" data-type="${p.type}" data-price="${basePrice(p)}" data-reviews="${p.reviews?.count ?? 0}">
-  <span class="card-media"><img src="${img(a)}" alt="" loading="${eager ? 'eager' : 'lazy'}" width="570" height="570">${b ? `<img class="alt" src="${img(b)}" alt="" loading="lazy" width="570" height="570">` : ''}${p.drop ? `<span class="tag">///${p.drop}</span>` : ''}${p.low ? '<span class="tag tag-low">Low stock</span>' : ''}</span>
+  <span class="card-media">${mediaHtml(lead, { size: 'il_570xN', eager, w: 570, h: 570 })}${b && lead.type === 'image' && posterSrc(b) ? `<img class="alt" src="${posterSrc(b)}" alt="" loading="lazy" width="570" height="570">` : ''}${p.drop ? `<span class="tag">///${p.drop}</span>` : ''}${p.low ? '<span class="tag tag-low">Low stock</span>' : ''}</span>
   <span class="card-body"><span class="card-name">${esc(p.name)}</span><span class="card-sub">${esc(p.sub)}</span>${priceTag(p)}</span>
 </a>`
 }
@@ -143,7 +154,7 @@ const runners = variantOpt(runnerTag).values
 
 function runnerTile(v, u) {
   return `<a class="runner" href="${u(`products/runner-tag/?runner=${v.key}`)}" style="--led:${v.glow}">
-  <span class="runner-media"><img src="${img(v.images[0])}" alt="" loading="lazy" width="570" height="570"></span>
+  <span class="runner-media">${mediaHtml(vmedia(v)[0], { size: 'il_570xN', w: 570, h: 570 })}</span>
   <canvas class="led runner-led" data-led="${attr({ cols: 44, glow: v.glow, messages: [{ text: v.label.replace(' Contraband', ''), effect: 'freeze', hold: 60 }, { text: v.label, effect: 'left' }] })}" aria-hidden="true"></canvas>
   <span class="runner-name">${esc(v.label)}</span>
   <span class="runner-meta">${v.edition} edition · ${money(v.price)}</span>
@@ -197,17 +208,19 @@ add('index.html', {
   body: (u) => `
 <section class="hero" aria-labelledby="hero-h">
   <div class="hero-sign">
-    <canvas class="led hero-led" data-led="${attr({ messages: [{ text: '///DROP-02 INCOMING' }, { preset: 'arrow', effect: 'left' }, { text: 'ELEVATE THE GAME' }, { preset: 'spinner', loops: 3 }] })}" aria-label="DROP-02 incoming. Elevate the game."></canvas>
+    <canvas class="led hero-led" data-led="${attr({ messages: site.hero.sign })}" aria-label="${esc(site.hero.sign.filter((m) => m.text).map((m) => m.text).join('. '))}"></canvas>
   </div>
   <div class="hero-grid">
     <div class="hero-copy">
-      <h1 id="hero-h">Game gear, modelled and printed in Toronto.</h1>
-      <p class="lede">Deck cases, grips and tuning tools for Beyblade X. Wearable LED Runner Tags for Marathon fans. Every piece designed by R3D Scott, animator and 3D artist.</p>
-      <div class="actions"><a class="btn btn-primary" href="${u('shop/')}">Shop the gear ${ICON.arrow}</a><a class="btn btn-ghost" href="#drop">Get DROP-02 alerts</a></div>
+      <h1 id="hero-h">${esc(site.hero.headline)}</h1>
+      <p class="lede">${esc(site.hero.lede)}</p>
+      <div class="actions"><a class="btn btn-primary" href="${link(u, site.hero.primary.href)}">${esc(site.hero.primary.label)} ${ICON.arrow}</a><a class="btn btn-ghost" href="${link(u, site.hero.secondary.href)}">${esc(site.hero.secondary.label)}</a></div>
     </div>
     <div class="doors">
-      <a class="door" href="${u('shop/beyblade-x/')}"><img src="${img(byHandle['l3d-challenger-box'].images[0], 'il_794xN')}" alt="" width="794" height="794" fetchpriority="high"><span class="door-label"><span class="door-name">Beyblade X</span><span class="door-count">${bey.length} pieces of kit</span></span></a>
-      <a class="door" href="${u('shop/marathon/')}"><img src="${img(runners[3].images[0], 'il_794xN')}" alt="" width="794" height="794"><span class="door-label"><span class="door-name">Marathon</span><span class="door-count">${runners.length} Runner Tags</span></span></a>
+      ${site.hero.doors.map((d, i) => {
+        const n = d.line === 'marathon' ? `${runners.length} Runner Tags` : `${products.filter((p) => p.line === d.line).length} pieces of kit`
+        return `<a class="door" href="${u(`shop/${d.line}/`)}">${mediaHtml(resolveMedia(d.media), { eager: i === 0 })}<span class="door-label"><span class="door-name">${esc(d.label)}</span><span class="door-count">${n}</span></span></a>`
+      }).join('')}
     </div>
   </div>
 </section>
@@ -224,7 +237,7 @@ ${composer(u)}
     ${['case', 'grip', 'tool', 'display'].map((t) => {
       const list = bey.filter((p) => p.type === t)
       const p = list[0]
-      return `<li><a class="type-tile" href="${u(`shop/beyblade-x/?type=${t}`)}"><img src="${img(images(p)[0])}" alt="" loading="lazy" width="570" height="570"><span class="type-name">${TYPES[t]}</span><span class="type-count">${list.length}</span></a></li>`
+      return `<li><a class="type-tile" href="${u(`shop/beyblade-x/?type=${t}`)}"><img src="${posterSrc(media(p)[0])}" alt="" loading="lazy" width="570" height="570"><span class="type-name">${TYPES[t]}</span><span class="type-count">${list.length}</span></a></li>`
     }).join('')}
   </ul>
 </section>
@@ -244,10 +257,10 @@ ${composer(u)}
 </section>
 
 <section class="drop-band" id="drop" aria-labelledby="drop-h">
-  <h2 id="drop-h" class="drop-title">${ledSvg('///DROP-02', { cls: 'drop-led', label: 'DROP-02' })}</h2>
+  <h2 id="drop-h" class="drop-title">${ledSvg(`///${site.drop.number}`, { cls: 'drop-led', label: site.drop.number })}</h2>
   <div class="drop-copy">
-    <p class="drop-line">Incoming. No date yet, no lineup leaks.</p>
-    <p>R3D releases in numbered drops, and the first ones sell through. Leave an address and the signal reaches you before the listings do.</p>
+    <p class="drop-line">${esc(site.drop.line)}</p>
+    <p>${esc(site.drop.copy)}</p>
     ${waitlist('home')}
   </div>
 </section>
@@ -355,9 +368,9 @@ function personaliseControl(p) {
 }
 
 for (const p of products) {
-  const imgs = images(p)
+  const ms = media(p)
   const related = products.filter((q) => q !== p && (q.type === p.type || q.line === p.line)).sort((a, b) => (a.type === p.type ? -1 : 1) - (b.type === p.type ? -1 : 1)).slice(0, 4)
-  const data = { handle: p.handle, name: p.name, price: p.price ?? null, etsy: p.etsy ?? null, images: p.images ?? null, options: p.options ?? [], personalise: p.personalise ?? null, led: p.led ?? null }
+  const data = { handle: p.handle, name: p.name, price: p.price ?? null, etsy: p.etsy ?? null, media: p.media || p.images ? vmedia(p) : null, options: p.options ?? [], personalise: p.personalise ?? null, led: p.led ?? null }
   add(`products/${p.handle}/index.html`, {
     active: 'shop',
     title: `${p.name}${p.fandom ? ' · Marathon-inspired' : p.line === 'beyblade-x' ? ' for Beyblade X' : ''} · R3D Game Essentials`,
@@ -368,8 +381,8 @@ for (const p of products) {
   <nav class="crumbs" aria-label="Breadcrumb"><a href="${u()}">Home</a><span aria-hidden="true">/</span><a href="${u(`shop/${p.line}/`)}">${LINES[p.line]}</a><span aria-hidden="true">/</span><span>${esc(p.name)}</span></nav>
   <div class="product-grid">
     <div class="gallery" data-gallery>
-      <div class="gallery-main"><img src="${img(imgs[0], 'il_794xN')}" alt="${esc(p.name)}" width="794" height="794" data-gallery-main fetchpriority="high">${p.drop ? `<span class="tag">///${p.drop}</span>` : ''}</div>
-      <div class="thumbs" data-thumbs>${imgs.map((src, i) => `<button type="button" class="thumb" aria-label="Photo ${i + 1}" aria-pressed="${i === 0}" data-src="${img(src, 'il_794xN')}"><img src="${img(src, 'il_340x270')}" alt="" loading="lazy" width="340" height="270"></button>`).join('')}</div>
+      <div class="gallery-main"><div class="gallery-slot" data-gallery-main>${mediaHtml(ms[0], { alt: p.name, eager: true })}</div>${p.drop ? `<span class="tag">///${p.drop}</span>` : ''}</div>
+      <div class="thumbs" data-thumbs>${ms.map((m, i) => `<button type="button" class="thumb" aria-label="${m.type === 'image' ? 'Photo' : m.type === 'video' ? 'Video' : '3D view'} ${i + 1}" aria-pressed="${i === 0}" data-i="${i}"><img src="${thumbSrc(m)}" alt="" loading="lazy" width="340" height="270"></button>`).join('')}</div>
     </div>
     <div class="buy">
       <h1>${esc(p.name)}</h1>
@@ -402,7 +415,6 @@ for (const p of products) {
   })
 }
 
-const founders = byHandle['foundersx-deck-case']
 add('drops/index.html', {
   active: 'drops',
   title: 'Drops · R3D Game Essentials',
@@ -410,9 +422,9 @@ add('drops/index.html', {
   body: (u) => `
 <section class="drop-hero" aria-labelledby="drops-h">
   <h1 id="drops-h" class="sr-only">Drops</h1>
-  <canvas class="led drop-hero-led" data-led="${attr({ messages: [{ text: '///DROP-02' }, { preset: 'spinner', loops: 3 }, { text: 'INCOMING', effect: 'laser' }, { text: 'NO DATE YET', effect: 'piling' }] })}" aria-label="DROP-02 incoming, no date yet"></canvas>
+  <canvas class="led drop-hero-led" data-led="${attr({ messages: site.drop.sign })}" aria-label="${esc(`${site.drop.number}. ${site.drop.line}`)}"></canvas>
   <div class="drop-hero-copy">
-    <h2>DROP-02 is incoming.</h2>
+    <h2>${esc(site.drop.number)} is incoming.</h2>
     <p class="lede">R3D releases new gear as numbered drops: a small run, a launch moment, then the edition retires. DROP-02 has no date and no lineup yet. The list hears first.</p>
     ${waitlist('drops')}
   </div>
@@ -420,8 +432,11 @@ add('drops/index.html', {
 <section class="band" aria-labelledby="arch-h">
   <div class="band-head"><h2 id="arch-h">The archive</h2><p>Every drop, what was in it, and how many were made.</p></div>
   <ol class="archive">
-    <li class="archive-row archive-next"><span class="archive-no">${ledSvg('02', { cls: 'archive-led', label: 'DROP-02' })}</span><div><h3>DROP-02</h3><p>Incoming. Lineup under wraps.</p></div><span class="archive-state">Teasing</span></li>
-    <li class="archive-row"><span class="archive-no">${ledSvg('01', { cls: 'archive-led', label: 'DROP-01' })}</span><div><h3>DROP-01 · FoundersX</h3><p>The launch edition deck case that opened R3D: wrist lanyard, peek-proof lid, magnetic clasp. Capped at 300 units per style, in black and white.</p><a class="link" href="${u('products/foundersx-deck-case/')}">See FoundersX ${ICON.arrow}</a></div><img src="${img(founders.options[0].values[0].images[0])}" alt="FoundersX deck case in black" loading="lazy" width="570" height="570"></li>
+    <li class="archive-row archive-next"><span class="archive-no">${ledSvg(site.drop.number.replace(/\D/g, ''), { cls: 'archive-led', label: site.drop.number })}</span><div><h3>${esc(site.drop.number)}</h3><p>${esc(site.drop.line)}</p></div><span class="archive-state">${esc(site.drop.status)}</span></li>
+    ${site.archive.map((d) => {
+      const p = byHandle[d.product]
+      return `<li class="archive-row"><span class="archive-no">${ledSvg(d.number.replace(/\D/g, ''), { cls: 'archive-led', label: d.number })}</span><div><h3>${esc(d.number)} · ${esc(d.name)}</h3><p>${esc(d.copy)}</p><a class="link" href="${u(`products/${p.handle}/`)}">See ${esc(p.name)} ${ICON.arrow}</a></div><img src="${posterSrc(media(p)[0])}" alt="${esc(p.name)}" loading="lazy" width="570" height="570"></li>`
+    }).join('')}
   </ol>
 </section>`,
 })
@@ -510,6 +525,7 @@ await rm(DIST, { recursive: true, force: true })
 await mkdir(DIST, { recursive: true })
 await cp(join(ROOT, 'src/assets'), join(DIST, 'assets'), { recursive: true })
 await cp(join(ROOT, 'src/fonts'), join(DIST, 'assets/fonts'), { recursive: true })
+await cp(join(ROOT, 'src/media'), join(DIST, 'media'), { recursive: true }).catch(() => {})
 for (const pg of pages) {
   const file = join(DIST, pg.path)
   await mkdir(dirname(file), { recursive: true })
